@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:teman_bicara/splashScreen/splashScreen.dart';
+import 'package:teman_bicara/screen/splashScreen.dart';
+import 'package:teman_bicara/journalScreen/journalScreen.dart';
 
 void main() {
   runApp(const MyApp());
