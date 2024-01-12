@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:teman_bicara/screen/splashScreen.dart';
 import 'package:teman_bicara/journalScreen/journalScreen.dart';
+import 'package:teman_bicara/trackingPage01.dart';
+import 'package:teman_bicara/trackingPage02.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const splashScreen(),
+      home: const trackingPage02(),
     );
   }
 }
