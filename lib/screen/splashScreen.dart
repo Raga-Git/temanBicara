@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:teman_bicara/screen/chatBotScreen.dart';
+import 'package:teman_bicara/screen/loginScreen.dart';
+import 'package:teman_bicara/screen/registerScreen.dart';
 
 class splashScreen extends StatelessWidget {
   const splashScreen({super.key});
@@ -9,7 +11,7 @@ class splashScreen extends StatelessWidget {
     Future.delayed(const Duration(seconds: 3)).then((value) {
       Navigator.of(context).pushAndRemoveUntil(
           MaterialPageRoute(
-            builder: (context) => chatBotScreen(),
+            builder: (context) => registerScreen(),
           ),
           (route) => false);
     });
