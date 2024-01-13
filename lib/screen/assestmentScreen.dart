@@ -8,15 +8,17 @@ class Assesment1Screen extends StatelessWidget {
         children: [
           Container(
             width: 1080,
-            height: 950,
+            height: 900,
             clipBehavior: Clip.antiAlias,
             decoration: ShapeDecoration(
               color: Color(0xFFFEFFFD),
               shape: RoundedRectangleBorder(
+
                 borderRadius: BorderRadius.only(
                    bottomRight:Radius.circular(32),
                   bottomLeft:Radius.circular(32),
-                )
+                ),
+
               ),
             ),
             child: Stack(
