@@ -10,13 +10,13 @@ class loginScreen extends StatelessWidget {
       
        children: [
         Container(
-          width: 393,
-          height: 852,
+          width: 1080,
+          height: 900,
           clipBehavior: Clip.antiAlias,
           decoration: ShapeDecoration(
             color: Color(0xFFFEFFFD),
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(40),
+              
             ),
           ),
           child: Stack(
@@ -25,7 +25,7 @@ class loginScreen extends StatelessWidget {
                 left: 0,
                 top: 0,
                 child: Container(
-                  width: 393,
+                  width: 415,
                   height: 166,
                   decoration: ShapeDecoration(
                     gradient: LinearGradient(
@@ -34,7 +34,10 @@ class loginScreen extends StatelessWidget {
                       colors: [Color(0xFFE1F8B1), Color(0xFF889F58)],
                     ),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(32),
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(32),
+                        bottomRight: Radius.circular(32)
+                        ),
                     ),
                     shadows: [
                       BoxShadow(
@@ -195,23 +198,6 @@ class loginScreen extends StatelessWidget {
                     left: 130,
                     right: 129,
                     bottom: 8,
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 134,
-                        height: 5,
-                        decoration: ShapeDecoration(
-                          color: Color(0xFF4E3321),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(100),
-                          ),
-                        ),
-                      ),
-                    ],
                   ),
                 ),
               ),

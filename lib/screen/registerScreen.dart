@@ -8,13 +8,13 @@ class registerScreen extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            width: 393,
-            height: 852,
+            width: 1080,
+            height: 900,
             clipBehavior: Clip.antiAlias,
             decoration: ShapeDecoration(
               color: Color(0xFFFEFFFD),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(40),
+
               ),
             ),
             child: Stack(
@@ -23,7 +23,7 @@ class registerScreen extends StatelessWidget {
                   left: 0,
                   top: 0,
                   child: Container(
-                    width: 393,
+                    width: 415,
                     height: 166,
                     decoration: ShapeDecoration(
                       gradient: LinearGradient(
@@ -32,7 +32,10 @@ class registerScreen extends StatelessWidget {
                         colors: [Color(0xFFE1F8B1), Color(0xFF889F58)],
                       ),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(32),
+                        borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(32),
+                          bottomRight: Radius.circular(32),
+                        )
                       ),
                       shadows: [
                         BoxShadow(

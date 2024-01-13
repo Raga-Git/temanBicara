@@ -7,13 +7,13 @@ class Assesment1Screen extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            width: 393,
-            height: 852,
+            width: 1080,
+            height: 900,
             clipBehavior: Clip.antiAlias,
             decoration: ShapeDecoration(
               color: Color(0xFFFEFFFD),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(40),
+                
               ),
             ),
             child: Stack(
