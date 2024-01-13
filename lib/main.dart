@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:teman_bicara/screen/artikelScreen.dart';
 import 'package:teman_bicara/screen/assestmentScreen.dart';
+import 'package:teman_bicara/screen/assestmentScreen02.dart';
 import 'package:teman_bicara/screen/chatBotScreen.dart';
 import 'package:teman_bicara/screen/loginScreen.dart';
+import 'package:teman_bicara/screen/registerScreen.dart';
 import 'package:teman_bicara/screen/splashScreen.dart';
 import 'package:teman_bicara/screen/journalScreen.dart';
 import 'package:teman_bicara/screen/trackingPage01.dart';
