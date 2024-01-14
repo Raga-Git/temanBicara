@@ -16,6 +16,7 @@ import 'package:teman_bicara/screen/journalScreen.dart';
 import 'package:teman_bicara/screen/trackingPage01.dart';
 import 'package:teman_bicara/screen/trackingPage02.dart';
 import 'package:teman_bicara/screen/trackingPage03.dart';
+import 'package:teman_bicara/screen/unggahPost.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ChatBotScreen02(),
+      home: UnggahJurnal(),
     );
   }
 }
