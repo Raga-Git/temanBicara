@@ -151,7 +151,7 @@ class AssesmentScreen2 extends StatelessWidget {
                 ),
                 Positioned(
                   left: 98,
-                  top: 333,
+                  top: 343,
                   child: Stack(
                     children: [
                       Positioned(

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:teman_bicara/screen/ChatBotScreen.dart';
+import 'package:teman_bicara/screen/chatBotScreen01.dart';
 
 class artikelScreen extends StatelessWidget {
   @override
@@ -438,9 +440,15 @@ class artikelScreen extends StatelessWidget {
                     child: Container(
                       width: 25,
                       height: 25,
-                      child: Stack(children: [
-                        Image.asset('assets/images/logoV2.png'),
-                      ]),
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ChatBotScreen01()),
+                          );
+                        },
+                          
+                       child:Image.asset('assets/images/logoV2.png'),
+                        
+                        ),
                     ),
                   ),
                   Positioned(

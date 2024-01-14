@@ -183,7 +183,7 @@ class AssesmentPage3 extends StatelessWidget {
                 ),
                 Positioned(
                   left: 16,
-                  top: 355,
+                  top: 320,
                   child: Container(
                     width: 361,
                     height: 62,
@@ -194,7 +194,7 @@ class AssesmentPage3 extends StatelessWidget {
                       children: [
                         Container(
                           width: 361,
-                          height: 62,
+                          height: 2,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -228,7 +228,7 @@ class AssesmentPage3 extends StatelessWidget {
                                   children: [
                                     Positioned(
                                     left: 23,
-                                    top: 2113,
+                                    top: 23,
                                     child: Text(
                                     
                                       'baik',
@@ -269,7 +269,7 @@ class AssesmentPage3 extends StatelessWidget {
                   top: 441,
                   child: Container(
                     width: 361,
-                    height: 62,
+                    height: 2,
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -285,7 +285,7 @@ class AssesmentPage3 extends StatelessWidget {
                             children: [
                               Container(
                                 width: 361,
-                                height: 62,
+                                height: 65,
                                 decoration: ShapeDecoration(
                                   color: Color(0xFFFEFFFD),
                                   shape: RoundedRectangleBorder(
@@ -303,7 +303,7 @@ class AssesmentPage3 extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                width: 55,
+                                width: 54,
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -541,7 +541,7 @@ class AssesmentPage3 extends StatelessWidget {
                                 height: 42.95,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: NetworkImage("https://via.placeholder.com/42x43"),
+                                    image: NetworkImage("https://via.plaeceholder.com/42x43"),
                                     fit: BoxFit.fill,
                                   ),
                                 ),
