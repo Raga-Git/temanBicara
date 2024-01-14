@@ -7,6 +7,8 @@ import 'package:teman_bicara/screen/assestmentScreen06.dart';
 import 'package:teman_bicara/screen/assestmentScreen07.dart';
 import 'package:teman_bicara/screen/assestmentScreenBerhasil.dart';
 import 'package:teman_bicara/screen/chatBotScreen.dart';
+import 'package:teman_bicara/screen/ChatBotScreen01.dart';
+import 'package:teman_bicara/screen/ChatBotScreen02.dart';
 import 'package:teman_bicara/screen/loginScreen.dart';
 import 'package:teman_bicara/screen/registerScreen.dart';
 import 'package:teman_bicara/screen/splashScreen.dart';
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AssesmentScreenBerhasil(),
+      home: ChatBotScreen02(),
     );
   }
 }

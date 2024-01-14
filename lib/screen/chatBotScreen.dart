@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:teman_bicara/screen/artikelScreen.dart';
 
-class chatBotScreen extends StatelessWidget {
-  const chatBotScreen({super.key});
+class ChatBotScreen extends StatefulWidget {
+  @override
+  _ChatBotScreenState createState() => _ChatBotScreenState();
+}
+
+class _ChatBotScreenState extends State<ChatBotScreen> {
+  bool showSidebar = false;
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +22,7 @@ class chatBotScreen extends StatelessWidget {
               clipBehavior: Clip.antiAlias,
               decoration: ShapeDecoration(
                 color: const Color(0xFFFEFFFD),
-                shape: RoundedRectangleBorder(
-                ),
+                shape: RoundedRectangleBorder(),
               ),
               child: Stack(
                 children: [
@@ -109,7 +114,6 @@ class chatBotScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-
                   Positioned(
                     left: 167,
                     top: 60,
@@ -218,28 +222,43 @@ class chatBotScreen extends StatelessWidget {
                       child: Image.asset('assets/images/Group.png'),
                     ),
                   ),
-                  Positioned(
-                    left: 40,
-                    top: 78,
-                    child: Container(
-                      width: 24,
-                      height: 24,
-                      child: Image.asset('assets/images/profile1.png'),
+                  
+                    Positioned(
+                      left: 40,
+                      top: 78,
+                      child: Container(
+                        width: 24,
+                        height: 24,
+                        child: InkWell(
+                          onTap: () {
+                            setState(() {
+                              showSidebar = !showSidebar;
+                            });
+                          },
+                          child: Image.asset('assets/images/profile1.png'),
+                        ),
+                      ),
                     ),
-                  ),
-                  Positioned(
-                    left: 329,
-                    top: 78,
-                    child: Container(
-                      width: 24,
-                      height: 24,
-                      clipBehavior: Clip.antiAlias,
-                      decoration: const BoxDecoration(),
-                      child: Stack(children: [
-                        Image.asset('assets/images/artikel.png'),
-                      ]),
+                    Positioned(
+                      left: 329,
+                      top: 78,
+                      child: Container(
+                        width: 24,
+                        height: 24,
+                        clipBehavior: Clip.antiAlias,
+                        decoration: const BoxDecoration(),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => artikelScreen()),
+                            );
+                          },
+                          child: Image.asset('assets/images/artikel.png'),
+                        ),
+                      ),
                     ),
-                  ),
                 ],
               ),
             ),
