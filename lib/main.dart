@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:teman_bicara/screen/artikelScreen.dart';
 import 'package:teman_bicara/screen/assestmentScreen.dart';
 import 'package:teman_bicara/screen/assestmentScreen02.dart';
+import 'package:teman_bicara/screen/assestmentScreen03.dart';
+import 'package:teman_bicara/screen/assestmentScreen04.dart';
+import 'package:teman_bicara/screen/assestmentScreen05.dart';
+import 'package:teman_bicara/screen/assestmentScreen06.dart';
+import 'package:teman_bicara/screen/assestmentScreen07.dart';
+import 'package:teman_bicara/screen/assestmentScreenBerhasil.dart';
 import 'package:teman_bicara/screen/chatBotScreen.dart';
 import 'package:teman_bicara/screen/loginScreen.dart';
 import 'package:teman_bicara/screen/registerScreen.dart';
@@ -15,8 +21,6 @@ void main() {
   runApp(MyApp());
 }
 
-//TEST
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -25,7 +29,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AssesmentScreen2(),
+
+      home: AssesmentPage4(),
+
+
     );
   }
 }
