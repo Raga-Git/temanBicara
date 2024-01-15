@@ -24,7 +24,7 @@ class AssesmentScreen2 extends StatelessWidget {
               children: [
                 Positioned(
                   left: 308,
-                  top: 97,
+                  top: 100,
                   child: Container(
                     width: 67,
                     height: 27,
@@ -46,7 +46,7 @@ class AssesmentScreen2 extends StatelessWidget {
                 ),
                 const Positioned(
                   left: 69,
-                  top: 98,
+                  top: 118,
                   child: Text(
                     'Assesment',
                     textAlign: TextAlign.center,
@@ -61,7 +61,7 @@ class AssesmentScreen2 extends StatelessWidget {
                 ),
                 const Positioned(
                   left: 55,
-                  top: 179,
+                  top: 198,
                   child: Text(
                     'Apa yang ingin kamu capai',
                     textAlign: TextAlign.center,
@@ -76,7 +76,7 @@ class AssesmentScreen2 extends StatelessWidget {
                 ),
                 const Positioned(
                   left: 324,
-                  top: 113,
+                  top: 115,
                   child: Text(
                     '2 of 7',
                     textAlign: TextAlign.center,
@@ -91,7 +91,7 @@ class AssesmentScreen2 extends StatelessWidget {
                 ),
                 Positioned(
                   left: 94,
-                  top: 667,
+                  top: 750,
                   child: Container(
                     width: 205,
                     height: 42,
@@ -139,24 +139,30 @@ class AssesmentScreen2 extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  left: 24,
-                  top: 94,
+                  left: 22,
+                  top: 95,
                   child: Container(
                     width: 32.12,
                     height: 32.12,
                     child: Stack(children: [
-                    Image.asset('assets/images/Group.png'),
+                    Image.asset('assets/images/logo.png'),
                     ]),
                   ),
                 ),
                 Positioned(
                   left: 98,
-                  top: 717,
+                  top: 343,
                   child: Stack(
                     children: [
+<<<<<<< HEAD
                       const Positioned(
                         left: 26,
                         top: 3,
+=======
+                      Positioned(
+                        left: 255,
+                        top: 133,
+>>>>>>> 746648aed85c2553dfa6bf57141ba850717c441c
                         child: Text(
                           'Silahkan pilih goalsmu!',
                           textAlign: TextAlign.center,
@@ -192,7 +198,7 @@ class AssesmentScreen2 extends StatelessWidget {
                 ),
                 Positioned(
                   left: 18,
-                  top: 238,
+                  top: 145,
                   child: Container(
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
@@ -229,7 +235,7 @@ class AssesmentScreen2 extends StatelessWidget {
                               ),
                               Positioned(
                                 left: 24,
-                                top: 16,
+                                top: 255,
                                 child: Container(
                                   width: 310,
                                   child: Row(

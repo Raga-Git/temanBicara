@@ -136,16 +136,17 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
                 ),
                 SizedBox(width: 8),
                 Container(
-                  height: 50,
-                  width: 250,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      border: Border.all(color: const Color(0xFF7D944D))),
-                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+                height: 50,
+                width: 250,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    border: Border.all(color: const Color(0xFF7D944D))),
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
                   child: Text('Halo, Bagaimana kabarmu hari ini?'),
                 ),
               ],
             ),
+           
           ],
         ),
       ),
