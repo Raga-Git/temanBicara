@@ -11,7 +11,7 @@ class AssesmentScreen2 extends StatelessWidget {
             width: 1080,
             height: 950,
             clipBehavior: Clip.antiAlias,
-            decoration: ShapeDecoration(
+            decoration: const ShapeDecoration(
               color: Color(0xFFFEFFFD),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
@@ -29,11 +29,11 @@ class AssesmentScreen2 extends StatelessWidget {
                     width: 67,
                     height: 27,
                     decoration: ShapeDecoration(
-                      color: Color(0xFF7D944D),
+                      color: const Color(0xFF7D944D),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50),
                       ),
-                      shadows: [
+                      shadows: const [
                         BoxShadow(
                           color: Color(0x3F000000),
                           blurRadius: 5,
@@ -44,7 +44,7 @@ class AssesmentScreen2 extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 69,
                   top: 98,
                   child: Text(
@@ -59,7 +59,7 @@ class AssesmentScreen2 extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 55,
                   top: 179,
                   child: Text(
@@ -74,7 +74,7 @@ class AssesmentScreen2 extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 324,
                   top: 113,
                   child: Text(
@@ -104,11 +104,11 @@ class AssesmentScreen2 extends StatelessWidget {
                             width: 205,
                             height: 42,
                             decoration: ShapeDecoration(
-                              color: Color(0xFF7D944D),
+                              color: const Color(0xFF7D944D),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(50),
                               ),
-                              shadows: [
+                              shadows: const [
                                 BoxShadow(
                                   color: Color(0x3F000000),
                                   blurRadius: 5,
@@ -119,7 +119,7 @@ class AssesmentScreen2 extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           left: 69,
                           top: 23,
                           child: Text(
@@ -154,7 +154,7 @@ class AssesmentScreen2 extends StatelessWidget {
                   top: 717,
                   child: Stack(
                     children: [
-                      Positioned(
+                      const Positioned(
                         left: 26,
                         top: 3,
                         child: Text(
@@ -176,7 +176,7 @@ class AssesmentScreen2 extends StatelessWidget {
                           width: 24,
                           height: 24,
                           clipBehavior: Clip.antiAlias,
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -213,10 +213,10 @@ class AssesmentScreen2 extends StatelessWidget {
                                   decoration: ShapeDecoration(
                                     color: Colors.white,
                                     shape: RoundedRectangleBorder(
-                                      side: BorderSide(width: 1, color: Color(0xFF7D944D)),
+                                      side: const BorderSide(width: 1, color: Color(0xFF7D944D)),
                                       borderRadius: BorderRadius.circular(50),
                                     ),
-                                    shadows: [
+                                    shadows: const [
                                       BoxShadow(
                                         color: Color(0x3F000000),
                                         blurRadius: 5,
@@ -237,7 +237,7 @@ class AssesmentScreen2 extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
-                                      Text(
+                                      const Text(
                                         'Aku ingin mengurangi stress',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
@@ -254,10 +254,10 @@ class AssesmentScreen2 extends StatelessWidget {
                                         height: 30,
                                         decoration: ShapeDecoration(
                                           shape: RoundedRectangleBorder(
-                                            side: BorderSide(width: 1, color: Color(0xFFB0B0AF)),
+                                            side: const BorderSide(width: 1, color: Color(0xFFB0B0AF)),
                                             borderRadius: BorderRadius.circular(50),
                                           ),
-                                          shadows: [
+                                          shadows: const [
                                             BoxShadow(
                                               color: Color(0x3F000000),
                                               blurRadius: 5,
@@ -301,10 +301,10 @@ class AssesmentScreen2 extends StatelessWidget {
                                   decoration: ShapeDecoration(
                                     color: Colors.white,
                                     shape: RoundedRectangleBorder(
-                                      side: BorderSide(width: 1, color: Color(0xFF7D944D)),
+                                      side: const BorderSide(width: 1, color: Color(0xFF7D944D)),
                                       borderRadius: BorderRadius.circular(50),
                                     ),
-                                    shadows: [
+                                    shadows: const [
                                       BoxShadow(
                                         color: Color(0x3F000000),
                                         blurRadius: 5,
@@ -325,7 +325,7 @@ class AssesmentScreen2 extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
-                                      Text(
+                                      const Text(
                                         'Aku ingin punya seorang teman',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
@@ -342,10 +342,10 @@ class AssesmentScreen2 extends StatelessWidget {
                                         height: 30,
                                         decoration: ShapeDecoration(
                                           shape: RoundedRectangleBorder(
-                                            side: BorderSide(width: 1, color: Color(0xFFB0B0AF)),
+                                            side: const BorderSide(width: 1, color: Color(0xFFB0B0AF)),
                                             borderRadius: BorderRadius.circular(50),
                                           ),
-                                          shadows: [
+                                          shadows: const [
                                             BoxShadow(
                                               color: Color(0x3F000000),
                                               blurRadius: 5,
@@ -389,10 +389,10 @@ class AssesmentScreen2 extends StatelessWidget {
                                   decoration: ShapeDecoration(
                                     color: Colors.white,
                                     shape: RoundedRectangleBorder(
-                                      side: BorderSide(width: 1, color: Color(0xFF7D944D)),
+                                      side: const BorderSide(width: 1, color: Color(0xFF7D944D)),
                                       borderRadius: BorderRadius.circular(50),
                                     ),
-                                    shadows: [
+                                    shadows: const [
                                       BoxShadow(
                                         color: Color(0x3F000000),
                                         blurRadius: 5,
@@ -413,7 +413,7 @@ class AssesmentScreen2 extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
-                                      Text(
+                                      const Text(
                                         'Aku ingin berinteraksi dengan AI',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
@@ -430,10 +430,10 @@ class AssesmentScreen2 extends StatelessWidget {
                                         height: 30,
                                         decoration: ShapeDecoration(
                                           shape: RoundedRectangleBorder(
-                                            side: BorderSide(width: 1, color: Color(0xFFB0B0AF)),
+                                            side: const BorderSide(width: 1, color: Color(0xFFB0B0AF)),
                                             borderRadius: BorderRadius.circular(50),
                                           ),
-                                          shadows: [
+                                          shadows: const [
                                             BoxShadow(
                                               color: Color(0x3F000000),
                                               blurRadius: 5,
@@ -477,10 +477,10 @@ class AssesmentScreen2 extends StatelessWidget {
                                   decoration: ShapeDecoration(
                                     color: Colors.white,
                                     shape: RoundedRectangleBorder(
-                                      side: BorderSide(width: 1, color: Color(0xFF7D944D)),
+                                      side: const BorderSide(width: 1, color: Color(0xFF7D944D)),
                                       borderRadius: BorderRadius.circular(50),
                                     ),
-                                    shadows: [
+                                    shadows: const [
                                       BoxShadow(
                                         color: Color(0x3F000000),
                                         blurRadius: 5,
@@ -501,7 +501,7 @@ class AssesmentScreen2 extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
-                                      Text(
+                                      const Text(
                                         'Aku ingin bertemu orang baru',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
@@ -518,10 +518,10 @@ class AssesmentScreen2 extends StatelessWidget {
                                         height: 30,
                                         decoration: ShapeDecoration(
                                           shape: RoundedRectangleBorder(
-                                            side: BorderSide(width: 1, color: Color(0xFFB0B0AF)),
+                                            side: const BorderSide(width: 1, color: Color(0xFFB0B0AF)),
                                             borderRadius: BorderRadius.circular(50),
                                           ),
-                                          shadows: [
+                                          shadows: const [
                                             BoxShadow(
                                               color: Color(0x3F000000),
                                               blurRadius: 5,
@@ -565,10 +565,10 @@ class AssesmentScreen2 extends StatelessWidget {
                                   decoration: ShapeDecoration(
                                     color: Colors.white,
                                     shape: RoundedRectangleBorder(
-                                      side: BorderSide(width: 1, color: Color(0xFF7D944D)),
+                                      side: const BorderSide(width: 1, color: Color(0xFF7D944D)),
                                       borderRadius: BorderRadius.circular(50),
                                     ),
-                                    shadows: [
+                                    shadows: const [
                                       BoxShadow(
                                         color: Color(0x3F000000),
                                         blurRadius: 5,
@@ -589,7 +589,7 @@ class AssesmentScreen2 extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
-                                      Text(
+                                      const Text(
                                         'Hanya iseng mencoba',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
@@ -606,10 +606,10 @@ class AssesmentScreen2 extends StatelessWidget {
                                         height: 30,
                                         decoration: ShapeDecoration(
                                           shape: RoundedRectangleBorder(
-                                            side: BorderSide(width: 1, color: Color(0xFFB0B0AF)),
+                                            side: const BorderSide(width: 1, color: Color(0xFFB0B0AF)),
                                             borderRadius: BorderRadius.circular(50),
                                           ),
-                                          shadows: [
+                                          shadows: const [
                                             BoxShadow(
                                               color: Color(0x3F000000),
                                               blurRadius: 5,
