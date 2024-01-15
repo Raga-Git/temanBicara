@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teman_bicara/screen/loginTextField.dart';
 class loginScreen extends StatelessWidget {
   const loginScreen({super.key});
 
@@ -325,11 +326,15 @@ class loginScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                       
-                           TextField(
+                      
+                           loginTextField(
                             
-                            
+                            hintText:  "Nama pengguna atau email ",
+                            obsecureText: false,
                           ),
+
+                         
+                        
                         
                       ],
                     ),
@@ -366,20 +371,10 @@ class loginScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Positioned(
-                          left: 24,
-                          top: 18,
-                          child: Text(
-                            'Kata sandi',
-                            style: TextStyle(
-                              color: Color(0xFF9B9B9B),
-                              fontSize: 14,
-                              fontFamily: 'Poppins',
-                              fontWeight: FontWeight.w600,
-                              height: 0.09,
-                            ),
+                          loginTextField(
+                            hintText:  "Kata Sandi ",
+                            obsecureText: true,
                           ),
-                        ),
                         Positioned(
                           left: 315,
                           top: 13,
