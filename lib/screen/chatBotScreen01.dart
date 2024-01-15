@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:teman_bicara/screen/artikelScreen.dart';
+
 import 'package:teman_bicara/screen/artikelScreen1.dart';
 
 class ChatBotScreen01 extends StatefulWidget {
