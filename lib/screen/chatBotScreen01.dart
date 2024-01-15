@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:teman_bicara/screen/artikelScreen.dart';
+import 'package:teman_bicara/screen/artikelScreen1.dart';
 
 class ChatBotScreen01 extends StatefulWidget {
   @override
@@ -55,7 +56,7 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
           IconButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => artikelScreen()));
+                    MaterialPageRoute(builder: (context) => artikelScreen1()));
               },
               icon: const Icon(
                 Icons.article_outlined,
