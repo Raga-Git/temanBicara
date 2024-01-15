@@ -13,7 +13,7 @@ class _ChatBotScreenState extends State<ChatBotScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: SingleChildScrollView(
+        child: SingleChildScrollView(
         child: Column(
           children: [
             Container(
