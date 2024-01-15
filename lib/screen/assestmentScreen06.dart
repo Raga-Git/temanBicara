@@ -12,7 +12,7 @@ class assestmentScreen06 extends StatelessWidget {
           width: 1080,
           height: 900,
           clipBehavior: Clip.antiAlias,
-          decoration: ShapeDecoration(
+          decoration: const ShapeDecoration(
             color: Color(0xFFFEFFFD),
             shape: RoundedRectangleBorder(
 
@@ -20,7 +20,7 @@ class assestmentScreen06 extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              Positioned(
+              const Positioned(
                 left: 69,
                 top: 98,
                 child: Text(
@@ -35,7 +35,7 @@ class assestmentScreen06 extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(
+              const Positioned(
                 left: 68,
                 top: 154,
                 child: Text(
@@ -64,11 +64,11 @@ class assestmentScreen06 extends StatelessWidget {
                           width: 67,
                           height: 27,
                           decoration: ShapeDecoration(
-                            color: Color(0xFF7D944D),
+                            color: const Color(0xFF7D944D),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50),
                             ),
-                            shadows: [
+                            shadows: const [
                               BoxShadow(
                                 color: Color(0x3F000000),
                                 blurRadius: 5,
@@ -79,7 +79,7 @@ class assestmentScreen06 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 16,
                         top: 15,
                         child: Text(
@@ -114,7 +114,7 @@ class assestmentScreen06 extends StatelessWidget {
                 top: 253,
                 child: Image.asset('assets/images/mental.png', scale: 2,),
               ),
-              Positioned(
+              const Positioned(
                 left: 40,
                 top: 605,
                 child: Opacity(
@@ -147,11 +147,11 @@ class assestmentScreen06 extends StatelessWidget {
                           width: 205,
                           height: 42,
                           decoration: ShapeDecoration(
-                            color: Color(0xFF7D944D),
+                            color: const Color(0xFF7D944D),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50),
                             ),
-                            shadows: [
+                            shadows: const [
                               BoxShadow(
                                 color: Color(0x3F000000),
                                 blurRadius: 5,
@@ -162,7 +162,7 @@ class assestmentScreen06 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 66,
                         top: 22,
                         child: Text(
@@ -189,7 +189,7 @@ class assestmentScreen06 extends StatelessWidget {
                   decoration: ShapeDecoration(
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(
+                      side: const BorderSide(
                         width: 1,
                         strokeAlign: BorderSide.strokeAlignOutside,
                         color: Color(0xFF7D944D),
@@ -197,7 +197,7 @@ class assestmentScreen06 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -225,7 +225,7 @@ class assestmentScreen06 extends StatelessWidget {
                   decoration: ShapeDecoration(
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(
+                      side: const BorderSide(
                         width: 1,
                         strokeAlign: BorderSide.strokeAlignOutside,
                         color: Color(0xFF7D944D),
@@ -233,7 +233,7 @@ class assestmentScreen06 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -261,7 +261,7 @@ class assestmentScreen06 extends StatelessWidget {
                   decoration: ShapeDecoration(
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(
+                      side: const BorderSide(
                         width: 1,
                         strokeAlign: BorderSide.strokeAlignOutside,
                         color: Color(0xFF7D944D),
@@ -269,7 +269,7 @@ class assestmentScreen06 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -297,7 +297,7 @@ class assestmentScreen06 extends StatelessWidget {
                   decoration: ShapeDecoration(
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(
+                      side: const BorderSide(
                         width: 1,
                         strokeAlign: BorderSide.strokeAlignOutside,
                         color: Color(0xFF7D944D),
@@ -305,7 +305,7 @@ class assestmentScreen06 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -333,7 +333,7 @@ class assestmentScreen06 extends StatelessWidget {
                   decoration: ShapeDecoration(
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(
+                      side: const BorderSide(
                         width: 1,
                         strokeAlign: BorderSide.strokeAlignOutside,
                         color: Color(0xFF7D944D),
@@ -341,7 +341,7 @@ class assestmentScreen06 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -369,7 +369,7 @@ class assestmentScreen06 extends StatelessWidget {
                   decoration: ShapeDecoration(
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(
+                      side: const BorderSide(
                         width: 1,
                         strokeAlign: BorderSide.strokeAlignOutside,
                         color: Color(0xFF7D944D),
@@ -377,7 +377,7 @@ class assestmentScreen06 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -405,7 +405,7 @@ class assestmentScreen06 extends StatelessWidget {
                   decoration: ShapeDecoration(
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(
+                      side: const BorderSide(
                         width: 1,
                         strokeAlign: BorderSide.strokeAlignOutside,
                         color: Color(0xFF7D944D),
@@ -413,7 +413,7 @@ class assestmentScreen06 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -441,7 +441,7 @@ class assestmentScreen06 extends StatelessWidget {
                   decoration: ShapeDecoration(
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(
+                      side: const BorderSide(
                         width: 1,
                         strokeAlign: BorderSide.strokeAlignOutside,
                         color: Color(0xFF7D944D),
@@ -449,7 +449,7 @@ class assestmentScreen06 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -488,7 +488,7 @@ class assestmentScreen06 extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50),
                             ),
-                            shadows: [
+                            shadows: const [
                               BoxShadow(
                                 color: Color(0x3F000000),
                                 blurRadius: 5,
@@ -499,7 +499,7 @@ class assestmentScreen06 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 24,
                         top: 20,
                         child: Opacity(

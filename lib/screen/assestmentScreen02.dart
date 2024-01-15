@@ -154,15 +154,9 @@ class AssesmentScreen2 extends StatelessWidget {
                   top: 343,
                   child: Stack(
                     children: [
-<<<<<<< HEAD
                       const Positioned(
                         left: 26,
                         top: 3,
-=======
-                      Positioned(
-                        left: 255,
-                        top: 133,
->>>>>>> 746648aed85c2553dfa6bf57141ba850717c441c
                         child: Text(
                           'Silahkan pilih goalsmu!',
                           textAlign: TextAlign.center,

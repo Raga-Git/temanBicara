@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class registerScreen extends StatelessWidget {
-    const registerScreen({super.key});
+  const registerScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -11,11 +11,9 @@ class registerScreen extends StatelessWidget {
             width: 1080,
             height: 900,
             clipBehavior: Clip.antiAlias,
-            decoration: ShapeDecoration(
+            decoration: const ShapeDecoration(
               color: Color(0xFFFEFFFD),
-              shape: RoundedRectangleBorder(
-
-              ),
+              shape: RoundedRectangleBorder(),
             ),
             child: Stack(
               children: [
@@ -25,18 +23,17 @@ class registerScreen extends StatelessWidget {
                   child: Container(
                     width: 415,
                     height: 166,
-                    decoration: ShapeDecoration(
+                    decoration: const ShapeDecoration(
                       gradient: LinearGradient(
                         begin: Alignment(0.00, -1.00),
                         end: Alignment(0, 1),
                         colors: [Color(0xFFE1F8B1), Color(0xFF889F58)],
                       ),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(32),
-                          bottomRight: Radius.circular(32),
-                        )
-                      ),
+                          borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(32),
+                        bottomRight: Radius.circular(32),
+                      )),
                       shadows: [
                         BoxShadow(
                           color: Color(0x337D944D),
@@ -48,7 +45,7 @@ class registerScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 134,
                   top: 227,
                   child: Text(
@@ -63,7 +60,7 @@ class registerScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 114,
                   top: 725,
                   child: Text(
@@ -78,7 +75,7 @@ class registerScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 239,
                   top: 725,
                   child: Text(
@@ -108,15 +105,16 @@ class registerScreen extends StatelessWidget {
                             width: 312,
                             height: 52,
                             decoration: ShapeDecoration(
-                              color: Color(0xFF7D944D),
+                              color: const Color(0xFF7D944D),
                               shape: RoundedRectangleBorder(
-                                side: BorderSide(width: 1, color: Color(0x66A4A4A4)),
+                                side: const BorderSide(
+                                    width: 1, color: Color(0x66A4A4A4)),
                                 borderRadius: BorderRadius.circular(16),
                               ),
                             ),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           left: 130,
                           top: 30,
                           child: Text(
@@ -142,7 +140,7 @@ class registerScreen extends StatelessWidget {
                     width: 45.88,
                     height: 45.88,
                     child: Stack(children: [
-                    Image.asset('assets/images/Group.png'),
+                      Image.asset('assets/images/Group.png'),
                     ]),
                   ),
                 ),
@@ -163,10 +161,11 @@ class registerScreen extends StatelessWidget {
                             decoration: ShapeDecoration(
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
-                                side: BorderSide(width: 1, color: Color(0x66A4A4A4)),
+                                side: const BorderSide(
+                                    width: 1, color: Color(0x66A4A4A4)),
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              shadows: [
+                              shadows: const [
                                 BoxShadow(
                                   color: Color(0x3F000000),
                                   blurRadius: 4,
@@ -177,7 +176,7 @@ class registerScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           left: 24,
                           top: 18,
                           child: Text(
@@ -212,10 +211,11 @@ class registerScreen extends StatelessWidget {
                             decoration: ShapeDecoration(
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
-                                side: BorderSide(width: 1, color: Color(0x66A4A4A4)),
+                                side: const BorderSide(
+                                    width: 1, color: Color(0x66A4A4A4)),
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              shadows: [
+                              shadows: const [
                                 BoxShadow(
                                   color: Color(0x3F000000),
                                   blurRadius: 4,
@@ -226,7 +226,7 @@ class registerScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           left: 24,
                           top: 18,
                           child: Text(
@@ -247,7 +247,7 @@ class registerScreen extends StatelessWidget {
                             width: 24,
                             height: 24,
                             clipBehavior: Clip.antiAlias,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Stack(
                               children: [
                                 Positioned(
@@ -257,7 +257,8 @@ class registerScreen extends StatelessWidget {
                                     width: 24,
                                     height: 24,
                                     child: Stack(children: [
-                                    Image.asset('assets/images/mingcute_eye-close-line.png'),
+                                      Image.asset(
+                                          'assets/images/mingcute_eye-close-line.png'),
                                     ]),
                                   ),
                                 ),
@@ -286,10 +287,11 @@ class registerScreen extends StatelessWidget {
                             decoration: ShapeDecoration(
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
-                                side: BorderSide(width: 1, color: Color(0x66A4A4A4)),
+                                side: const BorderSide(
+                                    width: 1, color: Color(0x66A4A4A4)),
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              shadows: [
+                              shadows: const [
                                 BoxShadow(
                                   color: Color(0x3F000000),
                                   blurRadius: 4,
@@ -300,7 +302,7 @@ class registerScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           left: 24,
                           top: 18,
                           child: Text(
@@ -321,7 +323,7 @@ class registerScreen extends StatelessWidget {
                             width: 24,
                             height: 24,
                             clipBehavior: Clip.antiAlias,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Stack(
                               children: [
                                 Positioned(
@@ -331,7 +333,8 @@ class registerScreen extends StatelessWidget {
                                     width: 24,
                                     height: 24,
                                     child: Stack(children: [
-                                    Image.asset('assets/images/mingcute_eye-close-line.png'),
+                                      Image.asset(
+                                          'assets/images/mingcute_eye-close-line.png'),
                                     ]),
                                   ),
                                 ),
@@ -348,7 +351,6 @@ class registerScreen extends StatelessWidget {
           ),
         ],
       ),
-
     );
   }
 }

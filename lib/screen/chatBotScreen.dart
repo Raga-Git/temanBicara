@@ -20,8 +20,8 @@ class _ChatBotScreenState extends State<ChatBotScreen> {
               width: 1080,
               height: 885,
               clipBehavior: Clip.antiAlias,
-              decoration: ShapeDecoration(
-                color: const Color(0xFFFEFFFD),
+              decoration: const ShapeDecoration(
+                color: Color(0xFFFEFFFD),
                 shape: RoundedRectangleBorder(),
               ),
               child: Stack(
@@ -103,7 +103,7 @@ class _ChatBotScreenState extends State<ChatBotScreen> {
                     child: Container(
                       width: 410,
                       height: 133,
-                      decoration: ShapeDecoration(
+                      decoration: const ShapeDecoration(
                         color: Color(0xFF7D944D),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.only(

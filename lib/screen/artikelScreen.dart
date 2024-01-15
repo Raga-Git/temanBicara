@@ -13,7 +13,7 @@ class artikelScreen extends StatelessWidget {
               width: 1200,
               height: 1273,
               decoration: ShapeDecoration(
-                color: Color(0xFFFEFFFD),
+                color: const Color(0xFFFEFFFD),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40),
                 ),
@@ -26,7 +26,7 @@ class artikelScreen extends StatelessWidget {
                     child: Container(
                       width: 410,
                       height: 133,
-                      decoration: ShapeDecoration(
+                      decoration: const ShapeDecoration(
                         color: Color(0xFF7D944D),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.only(
@@ -76,7 +76,7 @@ class artikelScreen extends StatelessWidget {
                       child: Image.asset('assets/images/profile1.png'),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 47,
                     top: 573,
                     child: Text(
@@ -90,7 +90,7 @@ class artikelScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 138,
                     top: 573,
                     child: Text(
@@ -104,7 +104,7 @@ class artikelScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 70,
                     top: 163,
                     child: Text(
@@ -119,7 +119,7 @@ class artikelScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 189,
                     top: 162,
                     child: Text(
@@ -134,7 +134,7 @@ class artikelScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 160,
                     top: 619,
                     child: Text(
@@ -149,7 +149,7 @@ class artikelScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 160,
                     top: 804,
                     child: Text(
@@ -173,7 +173,7 @@ class artikelScreen extends StatelessWidget {
                       child: Image.asset('assets/images/post1.png'),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 70,
                     top: 183,
                     child: Text(
@@ -194,7 +194,7 @@ class artikelScreen extends StatelessWidget {
                       width: 20,
                       height: 20,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Stack(children: [
                         Image.asset('assets/images/bagikan.png'),
                       ]),
@@ -206,7 +206,7 @@ class artikelScreen extends StatelessWidget {
                     child: Container(
                       width: 60,
                       height: 60,
-                      decoration: ShapeDecoration(
+                      decoration: const ShapeDecoration(
                         color: Color(0x02FBFFD8),
                         shape: OvalBorder(),
                       ),
@@ -232,7 +232,7 @@ class artikelScreen extends StatelessWidget {
                       child: Image.asset('assets/images/profile2.png')
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 70,
                     top: 620,
                     child: Text(
@@ -247,7 +247,7 @@ class artikelScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 70,
                     top: 805,
                     child: Text(
@@ -262,7 +262,7 @@ class artikelScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 70,
                     top: 640,
                     child: Text(
@@ -276,7 +276,7 @@ class artikelScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 47,
                     top: 758,
                     child: Text(
@@ -290,7 +290,7 @@ class artikelScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 138,
                     top: 758,
                     child: Text(
@@ -311,7 +311,7 @@ class artikelScreen extends StatelessWidget {
                       width: 20,
                       height: 20,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Stack(children: [
                         Image.asset('assets/images/bagikan.png'),
                       ]),
@@ -337,7 +337,7 @@ class artikelScreen extends StatelessWidget {
                       child: Image.asset('assets/images/profile2.png'),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 47,
                     top: 1215,
                     child: Text(
@@ -351,7 +351,7 @@ class artikelScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 138,
                     top: 1215,
                     child: Text(
@@ -365,7 +365,7 @@ class artikelScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 70,
                     top: 825,
                     child: Text(
@@ -386,7 +386,7 @@ class artikelScreen extends StatelessWidget {
                       width: 20,
                       height: 20,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Stack(children: [
                         Image.asset('assets/images/bagikan.png'),
                       ]),
@@ -467,7 +467,7 @@ class artikelScreen extends StatelessWidget {
                       width: 24,
                       height: 24,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Stack(children: [
                         Image.asset('assets/images/artikel.png'),
                       ]),
@@ -480,7 +480,7 @@ class artikelScreen extends StatelessWidget {
                       width: 24,
                       height: 24,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Stack(children: [
                         Image.asset('assets/images/Bookmark.png'),
                       ]),
@@ -493,7 +493,7 @@ class artikelScreen extends StatelessWidget {
                       width: 24,
                       height: 24,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Stack(children: [
                         Image.asset('assets/images/Bookmark.png'),
                       ]),
@@ -506,7 +506,7 @@ class artikelScreen extends StatelessWidget {
                       width: 24,
                       height: 24,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Stack(children: [
                         Image.asset('assets/images/Bookmark.png'),
                       ]),
@@ -518,7 +518,7 @@ class artikelScreen extends StatelessWidget {
                     child: Container(
                       width: 361,
                       height: 46,
-                      child: Stack(),
+                      child: const Stack(),
                     ),
                   ),
                   Positioned(
@@ -528,7 +528,7 @@ class artikelScreen extends StatelessWidget {
                       width: 50,
                       height: 50,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xFF7D944D), 
                         shape: BoxShape.circle,
                       ),
@@ -563,7 +563,7 @@ class artikelScreen extends StatelessWidget {
                             width: 134,
                             height: 5,
                             decoration: ShapeDecoration(
-                              color: Color(0xFF4E3321),
+                              color: const Color(0xFF4E3321),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(100),
                               ),

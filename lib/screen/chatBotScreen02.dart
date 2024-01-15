@@ -14,9 +14,9 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF7D944D),
+        backgroundColor: const Color(0xFF7D944D),
         toolbarHeight: 110,
-        shape: ContinuousRectangleBorder(
+        shape: const ContinuousRectangleBorder(
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(50),
             bottomRight: Radius.circular(50),
@@ -27,7 +27,7 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
             Scaffold.of(context).openDrawer();
           },
           child: Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(8.0),
             child: CircleAvatar(
               radius: 20.0,
               backgroundColor: Colors.transparent,
@@ -74,7 +74,7 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
               ;
             },
             child: Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: CircleAvatar(
                 backgroundColor: Colors.transparent,
                 child: ClipRect(
@@ -92,7 +92,7 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            DrawerHeader(
+            const DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
@@ -105,13 +105,13 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
               ),
             ),
             ListTile(
-              title: Text('Menu 1'),
+              title: const Text('Menu 1'),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             ListTile(
-              title: Text('Menu 2'),
+              title: const Text('Menu 2'),
               onTap: () {
                 Navigator.pop(context);
               },
@@ -134,7 +134,7 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
                     ),
                   ),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 Container(
                 height: 50,
                 width: 250,
@@ -142,7 +142,7 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
                     borderRadius: BorderRadius.circular(50),
                     border: Border.all(color: const Color(0xFF7D944D))),
                 padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
-                  child: Text('Halo, Bagaimana kabarmu hari ini?'),
+                  child: const Text('Halo, Bagaimana kabarmu hari ini?'),
                 ),
               ],
             ),

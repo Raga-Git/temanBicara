@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class AssesmentPage3 extends StatelessWidget {
   const AssesmentPage3({super.key});
   @override
@@ -7,22 +8,20 @@ class AssesmentPage3 extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            
             width: 1080,
             height: 950,
             clipBehavior: Clip.antiAlias,
-            decoration: ShapeDecoration(
+            decoration: const ShapeDecoration(
               color: Color(0xFFFEFFFD),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(
-                   bottomRight:Radius.circular(32),
-                  bottomLeft:Radius.circular(32),
-                )
-              ),
+                  borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(32),
+                bottomLeft: Radius.circular(32),
+              )),
             ),
             child: Stack(
               children: [
-                Positioned(
+                const Positioned(
                   left: 69,
                   top: 115,
                   child: Text(
@@ -51,14 +50,13 @@ class AssesmentPage3 extends StatelessWidget {
                           child: Container(
                             width: 67,
                             height: 27,
-                            decoration: ShapeDecoration(
+                            decoration: const ShapeDecoration(
                               color: Color(0xFF7D944D),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.only(
-                                  bottomRight:Radius.circular(32),
-                                  bottomLeft:Radius.circular(32),
-                                )
-                              ),
+                                  borderRadius: BorderRadius.only(
+                                bottomRight: Radius.circular(32),
+                                bottomLeft: Radius.circular(32),
+                              )),
                               shadows: [
                                 BoxShadow(
                                   color: Color(0x3F000000),
@@ -70,9 +68,9 @@ class AssesmentPage3 extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           left: 16,
-                          top: 15 ,
+                          top: 15,
                           child: Text(
                             '3 of 7',
                             textAlign: TextAlign.center,
@@ -104,11 +102,11 @@ class AssesmentPage3 extends StatelessWidget {
                             width: 205,
                             height: 42,
                             decoration: ShapeDecoration(
-                              color: Color(0xFF7D944D),
+                              color: const Color(0xFF7D944D),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(50),
                               ),
-                              shadows: [
+                              shadows: const [
                                 BoxShadow(
                                   color: Color(0x3F000000),
                                   blurRadius: 5,
@@ -119,7 +117,7 @@ class AssesmentPage3 extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           left: 69,
                           top: 23,
                           child: Text(
@@ -145,16 +143,15 @@ class AssesmentPage3 extends StatelessWidget {
                     width: 32.12,
                     height: 32.12,
                     child: Stack(children: [
-                    Image.asset('assets/images/logo.png'),
+                      Image.asset('assets/images/logo.png'),
                     ]),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 85,
                   top: 179,
                   child: Text(
                     'Gimana dengan kualitas',
-    
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Color(0xFF35383F),
@@ -165,11 +162,10 @@ class AssesmentPage3 extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 90,
                   top: 204,
                   child: Text(
-                  
                     'tidurmu akhir-akhir ini?',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -204,12 +200,13 @@ class AssesmentPage3 extends StatelessWidget {
                                 width: 361,
                                 height: 62,
                                 decoration: ShapeDecoration(
-                                  color: Color(0xFFFEFFFD),
+                                  color: const Color(0xFFFEFFFD),
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 1, color: Color(0xFF7D944D)),
+                                    side: const BorderSide(
+                                        width: 1, color: Color(0xFF7D944D)),
                                     borderRadius: BorderRadius.circular(50),
                                   ),
-                                  shadows: [
+                                  shadows: const [
                                     BoxShadow(
                                       color: Color(0x3F000000),
                                       blurRadius: 5,
@@ -221,28 +218,28 @@ class AssesmentPage3 extends StatelessWidget {
                               ),
                               Container(
                                 width: 54,
-                                child: Column(
+                                child: const Column(
                                   mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Positioned(
-                                    left: 23,
-                                    top: 23,
-                                    child: Text(
-                                    
-                                      'baik',
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        color: Color(0xFF7D944D),
-                                        fontSize: 20,
-                                        fontFamily: 'Poppins',
-                                        fontWeight: FontWeight.w700,
-                                        height: 0.06,
+                                      left: 23,
+                                      top: 23,
+                                      child: Text(
+                                        'baik',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Color(0xFF7D944D),
+                                          fontSize: 20,
+                                          fontFamily: 'Poppins',
+                                          fontWeight: FontWeight.w700,
+                                          height: 0.06,
+                                        ),
                                       ),
                                     ),
-                ),
-                                    const SizedBox(height: 2),
+                                    SizedBox(height: 2),
                                     Text(
                                       '7 - 8 jam',
                                       textAlign: TextAlign.center,
@@ -287,12 +284,13 @@ class AssesmentPage3 extends StatelessWidget {
                                 width: 361,
                                 height: 65,
                                 decoration: ShapeDecoration(
-                                  color: Color(0xFFFEFFFD),
+                                  color: const Color(0xFFFEFFFD),
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 1, color: Color(0xFF7D944D)),
+                                    side: const BorderSide(
+                                        width: 1, color: Color(0xFF7D944D)),
                                     borderRadius: BorderRadius.circular(50),
                                   ),
-                                  shadows: [
+                                  shadows: const [
                                     BoxShadow(
                                       color: Color(0x3F000000),
                                       blurRadius: 5,
@@ -304,9 +302,10 @@ class AssesmentPage3 extends StatelessWidget {
                               ),
                               Container(
                                 width: 54,
-                                child: Column(
+                                child: const Column(
                                   mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -320,7 +319,7 @@ class AssesmentPage3 extends StatelessWidget {
                                         height: 0.08,
                                       ),
                                     ),
-                                    const SizedBox(height: 2),
+                                    SizedBox(height: 2),
                                     Text(
                                       '6 jam',
                                       textAlign: TextAlign.center,
@@ -365,12 +364,13 @@ class AssesmentPage3 extends StatelessWidget {
                                 width: 361,
                                 height: 62,
                                 decoration: ShapeDecoration(
-                                  color: Color(0xFFFEFFFD),
+                                  color: const Color(0xFFFEFFFD),
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 1, color: Color(0xFF7D944D)),
+                                    side: const BorderSide(
+                                        width: 1, color: Color(0xFF7D944D)),
                                     borderRadius: BorderRadius.circular(50),
                                   ),
-                                  shadows: [
+                                  shadows: const [
                                     BoxShadow(
                                       color: Color(0x3F000000),
                                       blurRadius: 5,
@@ -382,9 +382,10 @@ class AssesmentPage3 extends StatelessWidget {
                               ),
                               Container(
                                 width: 62,
-                                child: Column(
+                                child: const Column(
                                   mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -398,7 +399,7 @@ class AssesmentPage3 extends StatelessWidget {
                                         height: 0.08,
                                       ),
                                     ),
-                                    const SizedBox(height: 2),
+                                    SizedBox(height: 2),
                                     Text(
                                       '4 - 5 jam',
                                       textAlign: TextAlign.center,
@@ -443,12 +444,13 @@ class AssesmentPage3 extends StatelessWidget {
                                 width: 361,
                                 height: 62,
                                 decoration: ShapeDecoration(
-                                  color: Color(0xFFFEFFFD),
+                                  color: const Color(0xFFFEFFFD),
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 1, color: Color(0xFF7D944D)),
+                                    side: const BorderSide(
+                                        width: 1, color: Color(0xFF7D944D)),
                                     borderRadius: BorderRadius.circular(50),
                                   ),
-                                  shadows: [
+                                  shadows: const [
                                     BoxShadow(
                                       color: Color(0x3F000000),
                                       blurRadius: 5,
@@ -460,9 +462,10 @@ class AssesmentPage3 extends StatelessWidget {
                               ),
                               Container(
                                 width: 87,
-                                child: Column(
+                                child: const Column(
                                   mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -476,7 +479,7 @@ class AssesmentPage3 extends StatelessWidget {
                                         height: 0.08,
                                       ),
                                     ),
-                                    const SizedBox(height: 2),
+                                    SizedBox(height: 2),
                                     Text(
                                       '< 4 jam',
                                       textAlign: TextAlign.center,
@@ -521,12 +524,13 @@ class AssesmentPage3 extends StatelessWidget {
                                 width: 361,
                                 height: 62,
                                 decoration: ShapeDecoration(
-                                  color: Color(0xFFFEFFFD),
+                                  color: const Color(0xFFFEFFFD),
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(width: 1, color: Color(0xFF7D944D)),
+                                    side: const BorderSide(
+                                        width: 1, color: Color(0xFF7D944D)),
                                     borderRadius: BorderRadius.circular(50),
                                   ),
-                                  shadows: [
+                                  shadows: const [
                                     BoxShadow(
                                       color: Color(0x3F000000),
                                       blurRadius: 5,
@@ -539,18 +543,20 @@ class AssesmentPage3 extends StatelessWidget {
                               Container(
                                 width: 42,
                                 height: 42.95,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   image: DecorationImage(
-                                    image: NetworkImage("https://via.plaeceholder.com/42x43"),
+                                    image: NetworkImage(
+                                        "https://via.plaeceholder.com/42x43"),
                                     fit: BoxFit.fill,
                                   ),
                                 ),
                               ),
                               Container(
                                 width: 74,
-                                child: Column(
+                                child: const Column(
                                   mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -564,7 +570,7 @@ class AssesmentPage3 extends StatelessWidget {
                                         height: 0.08,
                                       ),
                                     ),
-                                    const SizedBox(height: 2),
+                                    SizedBox(height: 2),
                                     Text(
                                       '8 - 9 jam',
                                       textAlign: TextAlign.center,
@@ -592,9 +598,10 @@ class AssesmentPage3 extends StatelessWidget {
                   child: Container(
                     width: 42,
                     height: 43.71,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: NetworkImage("https://via.placeholder.com/42x44"),
+                        image:
+                            NetworkImage("https://via.placeholder.com/42x44"),
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -606,9 +613,10 @@ class AssesmentPage3 extends StatelessWidget {
                   child: Container(
                     width: 42,
                     height: 42,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: NetworkImage("https://via.placeholder.com/42x42"),
+                        image:
+                            NetworkImage("https://via.placeholder.com/42x42"),
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -620,9 +628,10 @@ class AssesmentPage3 extends StatelessWidget {
                   child: Container(
                     width: 42,
                     height: 42,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: NetworkImage("https://via.placeholder.com/42x42"),
+                        image:
+                            NetworkImage("https://via.placeholder.com/42x42"),
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -634,9 +643,10 @@ class AssesmentPage3 extends StatelessWidget {
                   child: Container(
                     width: 42,
                     height: 43.62,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: NetworkImage("https://via.placeholder.com/42x44"),
+                        image:
+                            NetworkImage("https://via.placeholder.com/42x44"),
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -647,7 +657,7 @@ class AssesmentPage3 extends StatelessWidget {
                   top: 717,
                   child: Stack(
                     children: [
-                      Positioned(
+                      const Positioned(
                         left: 26,
                         top: 3,
                         child: Text(
@@ -669,13 +679,13 @@ class AssesmentPage3 extends StatelessWidget {
                           width: 24,
                           height: 24,
                           clipBehavior: Clip.antiAlias,
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                            Image.asset('assets/images/logo.png'),
+                              Image.asset('assets/images/logo.png'),
                             ],
                           ),
                         ),
@@ -688,7 +698,6 @@ class AssesmentPage3 extends StatelessWidget {
           ),
         ],
       ),
-
     );
   }
 }
