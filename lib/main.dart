@@ -32,7 +32,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+<<<<<<< HEAD
       home: artikelScreen2(),
+=======
+      home: loginScreen(),
+>>>>>>> 11cc640541190e4b0c18811cac41cf508818583d
     );
   }
 }
