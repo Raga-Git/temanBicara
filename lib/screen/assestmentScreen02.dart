@@ -192,7 +192,7 @@ class AssesmentScreen2 extends StatelessWidget {
                 ),
                 Positioned(
                   left: 18,
-                  top: 145,
+                  top: 1,
                   child: Container(
                     child: Column(
                       mainAxisSize: MainAxisSize.min,

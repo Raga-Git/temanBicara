@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
 
-      home: AssesmentPage3(),
+      home: AssesmentScreen2(),
 
 
 
