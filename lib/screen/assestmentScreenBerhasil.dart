@@ -10,7 +10,7 @@ class AssesmentScreenBerhasil extends StatelessWidget {
             width: 1080,
             height: 900,
             clipBehavior: Clip.antiAlias,
-            decoration: ShapeDecoration(
+            decoration: const ShapeDecoration(
               color: Color(0xFF7D944D),
               shape: RoundedRectangleBorder(
               ),
@@ -29,7 +29,7 @@ class AssesmentScreenBerhasil extends StatelessWidget {
                         Image.asset('assets/images/ceklis.png'),
                         const SizedBox(height: 30),
                         Container(
-                          child: Column(
+                          child: const Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -44,7 +44,7 @@ class AssesmentScreenBerhasil extends StatelessWidget {
                                   height: 0,
                                 ),
                               ),
-                              const SizedBox(height: 15),
+                              SizedBox(height: 15),
                               SizedBox(
                                 width: 328,
                                 child: Text(

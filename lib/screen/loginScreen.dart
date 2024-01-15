@@ -1,25 +1,24 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:teman_bicara/screen/loginTextField.dart';
+=======
+
+>>>>>>> 5ba72d0824379f12361167564f373017279ac3b8
 class loginScreen extends StatelessWidget {
   const loginScreen({super.key});
 
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-     body: Center(  
-      child:  SingleChildScrollView(
-      child: Column( 
+    return SingleChildScrollView(
+      child: Column(
         children: [
           Container(
             width: 1080,
             height: 900,
             clipBehavior: Clip.antiAlias,
-            decoration: ShapeDecoration(
+            decoration: const ShapeDecoration(
               color: Color(0xFFFEFFFD),
-              shape: RoundedRectangleBorder(
-                
-              ),
+              shape: RoundedRectangleBorder(),
             ),
             child: Stack(
               children: [
@@ -29,7 +28,7 @@ class loginScreen extends StatelessWidget {
                   child: Container(
                     width: 415,
                     height: 166,
-                    decoration: ShapeDecoration(
+                    decoration: const ShapeDecoration(
                       gradient: LinearGradient(
                         begin: Alignment(0.00, -1.00),
                         end: Alignment(0, 1),
@@ -37,9 +36,8 @@ class loginScreen extends StatelessWidget {
                       ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(32),
-                          bottomRight: Radius.circular(32)
-                          ),
+                            bottomLeft: Radius.circular(32),
+                            bottomRight: Radius.circular(32)),
                       ),
                       shadows: [
                         BoxShadow(
@@ -59,11 +57,11 @@ class loginScreen extends StatelessWidget {
                     width: 45.88,
                     height: 45.88,
                     child: Stack(children: [
-                        Image.asset('assets/images/Group.png'),
+                      Image.asset('assets/images/Group.png'),
                     ]),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 141,
                   top: 227,
                   child: Text(
@@ -84,7 +82,7 @@ class loginScreen extends StatelessWidget {
                   child: Container(
                     width: 46,
                     height: 46,
-                    decoration: ShapeDecoration(
+                    decoration: const ShapeDecoration(
                       color: Colors.white,
                       shape: OvalBorder(),
                       shadows: [
@@ -104,7 +102,7 @@ class loginScreen extends StatelessWidget {
                   child: Container(
                     width: 46,
                     height: 46,
-                    decoration: ShapeDecoration(
+                    decoration: const ShapeDecoration(
                       color: Colors.white,
                       shape: OvalBorder(),
                       shadows: [
@@ -124,7 +122,7 @@ class loginScreen extends StatelessWidget {
                   child: Container(
                     width: 46,
                     height: 46,
-                    decoration: ShapeDecoration(
+                    decoration: const ShapeDecoration(
                       color: Colors.white,
                       shape: OvalBorder(),
                       shadows: [
@@ -145,9 +143,9 @@ class loginScreen extends StatelessWidget {
                     width: 24,
                     height: 24,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Stack(children: [
-                    Image.asset('assets/images/flat-color-icons_google.png'),
+                      Image.asset('assets/images/flat-color-icons_google.png'),
                     ]),
                   ),
                 ),
@@ -158,7 +156,7 @@ class loginScreen extends StatelessWidget {
                     width: 24,
                     height: 24,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Stack(
                       children: [
                         Positioned(
@@ -168,7 +166,7 @@ class loginScreen extends StatelessWidget {
                             width: 24,
                             height: 24,
                             child: Stack(children: [
-                                Image.asset('assets/images/ig.png'),
+                              Image.asset('assets/images/ig.png'),
                             ]),
                           ),
                         ),
@@ -183,9 +181,9 @@ class loginScreen extends StatelessWidget {
                     width: 30,
                     height: 31,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: Stack(children: [
-                        Image.asset('assets/images/X.png'),
+                      Image.asset('assets/images/X.png'),
                     ]),
                   ),
                 ),
@@ -203,7 +201,7 @@ class loginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 115,
                   top: 765,
                   child: Text(
@@ -218,7 +216,7 @@ class loginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 236,
                   top: 765,
                   child: Text.rich(
@@ -249,7 +247,7 @@ class loginScreen extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 253,
                   top: 516,
                   child: Text(
@@ -271,15 +269,16 @@ class loginScreen extends StatelessWidget {
                     width: 312,
                     height: 52,
                     decoration: ShapeDecoration(
-                      color: Color(0xFF7D944D),
+                      color: const Color(0xFF7D944D),
                       shape: RoundedRectangleBorder(
-                        side: BorderSide(width: 1, color: Color(0x66A4A4A4)),
+                        side: const BorderSide(
+                            width: 1, color: Color(0x66A4A4A4)),
                         borderRadius: BorderRadius.circular(16),
                       ),
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   left: 169,
                   top: 597,
                   child: Text(
@@ -294,7 +293,6 @@ class loginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-
                 Positioned(
                   left: 15,
                   top: 331,
@@ -312,10 +310,11 @@ class loginScreen extends StatelessWidget {
                             decoration: ShapeDecoration(
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
-                                side: BorderSide(width: 1, color: Color(0x66A4A4A4)),
+                                side: const BorderSide(
+                                    width: 1, color: Color(0x66A4A4A4)),
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              shadows: [
+                              shadows: const [
                                 BoxShadow(
                                   color: Color(0x3F000000),
                                   blurRadius: 4,
@@ -326,6 +325,7 @@ class loginScreen extends StatelessWidget {
                             ),
                           ),
                         ),
+<<<<<<< HEAD
                       
                            loginTextField(
                             
@@ -336,6 +336,22 @@ class loginScreen extends StatelessWidget {
                          
                         
                         
+=======
+                        const Positioned(
+                          left: 24,
+                          top: 18,
+                          child: Text(
+                            'Nama pengguna atau email',
+                            style: TextStyle(
+                              color: Color(0xFF9B9B9B),
+                              fontSize: 14,
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w600,
+                              height: 0.09,
+                            ),
+                          ),
+                        ),
+>>>>>>> 5ba72d0824379f12361167564f373017279ac3b8
                       ],
                     ),
                   ),
@@ -357,10 +373,11 @@ class loginScreen extends StatelessWidget {
                             decoration: ShapeDecoration(
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
-                                side: BorderSide(width: 1, color: Color(0x66A4A4A4)),
+                                side: const BorderSide(
+                                    width: 1, color: Color(0x66A4A4A4)),
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              shadows: [
+                              shadows: const [
                                 BoxShadow(
                                   color: Color(0x3F000000),
                                   blurRadius: 4,
@@ -371,9 +388,24 @@ class loginScreen extends StatelessWidget {
                             ),
                           ),
                         ),
+<<<<<<< HEAD
                           loginTextField(
                             hintText:  "Kata Sandi ",
                             obsecureText: true,
+=======
+                        const Positioned(
+                          left: 24,
+                          top: 18,
+                          child: Text(
+                            'Kata sandi',
+                            style: TextStyle(
+                              color: Color(0xFF9B9B9B),
+                              fontSize: 14,
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w600,
+                              height: 0.09,
+                            ),
+>>>>>>> 5ba72d0824379f12361167564f373017279ac3b8
                           ),
                         Positioned(
                           left: 315,
@@ -382,7 +414,7 @@ class loginScreen extends StatelessWidget {
                             width: 24,
                             height: 24,
                             clipBehavior: Clip.antiAlias,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Stack(
                               children: [
                                 Positioned(
@@ -392,7 +424,8 @@ class loginScreen extends StatelessWidget {
                                     width: 24,
                                     height: 24,
                                     child: Stack(children: [
-                                        Image.asset('assets/images/mingcute_eye-close-line.png'),
+                                      Image.asset(
+                                          'assets/images/mingcute_eye-close-line.png'),
                                     ]),
                                   ),
                                 ),
@@ -409,9 +442,15 @@ class loginScreen extends StatelessWidget {
           ),
         ],
       ),
+<<<<<<< HEAD
 
      )),
   );
 }
 
 }
+=======
+    );
+  }
+}
+>>>>>>> 5ba72d0824379f12361167564f373017279ac3b8

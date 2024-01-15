@@ -6,10 +6,10 @@ class assestmentScreen03 extends StatelessWidget {
       home : Scaffold(
         body: SafeArea(
           child : Padding(
-            padding : EdgeInsets.symmetric(horizontal: 20),
+            padding : const EdgeInsets.symmetric(horizontal: 20),
             child : Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height:45 ,
                 ),
 
@@ -23,7 +23,7 @@ class assestmentScreen03 extends StatelessWidget {
                       Container(
                       width: 170,
                       height: 40,
-                      child : Row(
+                      child : const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           // Image.asset('assets/images/logo.png'), // 
@@ -42,7 +42,7 @@ class assestmentScreen03 extends StatelessWidget {
                         width: 80,
                         height: 30,
                         decoration: BoxDecoration(
-                          color: Color(0xFF7D944D),
+                          color: const Color(0xFF7D944D),
                           borderRadius: BorderRadius.circular(50),
                           boxShadow: const [
                             BoxShadow(
@@ -54,7 +54,7 @@ class assestmentScreen03 extends StatelessWidget {
                           ],
                         ),
                       
-                        child : Row(
+                        child : const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("3 of 7",
@@ -72,14 +72,14 @@ class assestmentScreen03 extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height:52 ,
                 ),
 
                 Container(
                   width: double.infinity,
                   height: 60,
-                  child : Column (
+                  child : const Column (
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("Gimana dengan kualitas ",
@@ -101,7 +101,7 @@ class assestmentScreen03 extends StatelessWidget {
                   ),
                 ),
               
-                SizedBox(
+                const SizedBox(
                   height:35,
                 ),
 
@@ -110,7 +110,7 @@ class assestmentScreen03 extends StatelessWidget {
                   width: double.infinity,
 
                   child : Padding(
-                    padding : EdgeInsets.symmetric(horizontal: 20),
+                    padding : const EdgeInsets.symmetric(horizontal: 20),
 
                     child : Container(
                       height: 200,
@@ -125,7 +125,7 @@ class assestmentScreen03 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
                               color: Colors.white,
-                              border: Border.all(color: Color(0xFF7D944D),
+                              border: Border.all(color: const Color(0xFF7D944D),
                                 width: 2,
                               ),
                               boxShadow: const [
@@ -139,7 +139,7 @@ class assestmentScreen03 extends StatelessWidget {
                             ),
 
                             child : Padding(
-                              padding : EdgeInsets.symmetric(horizontal: 30),
+                              padding : const EdgeInsets.symmetric(horizontal: 30),
                               child : Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -205,7 +205,7 @@ class assestmentScreen03 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
                               color: Colors.white,
-                              border: Border.all(color: Color(0xFF7D944D),
+                              border: Border.all(color: const Color(0xFF7D944D),
                                 width: 2,
                               ),
                               boxShadow: const [
@@ -219,7 +219,7 @@ class assestmentScreen03 extends StatelessWidget {
                             ),
 
                             child : Padding(
-                              padding : EdgeInsets.symmetric(horizontal: 30),
+                              padding : const EdgeInsets.symmetric(horizontal: 30),
                               child : Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -280,7 +280,7 @@ class assestmentScreen03 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
                               color: Colors.white,
-                              border: Border.all(color: Color(0xFF7D944D),
+                              border: Border.all(color: const Color(0xFF7D944D),
                                 width: 2,
                               ),
                               boxShadow: const [
@@ -294,7 +294,7 @@ class assestmentScreen03 extends StatelessWidget {
                             ),
 
                             child : Padding(
-                              padding : EdgeInsets.symmetric(horizontal: 30),
+                              padding : const EdgeInsets.symmetric(horizontal: 30),
                               child : Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -360,7 +360,7 @@ class assestmentScreen03 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
                               color: Colors.white,
-                              border: Border.all(color: Color(0xFF7D944D),
+                              border: Border.all(color: const Color(0xFF7D944D),
                                 width: 2,
                               ),
                               boxShadow: const [
@@ -374,7 +374,7 @@ class assestmentScreen03 extends StatelessWidget {
                             ),
 
                             child : Padding(
-                              padding : EdgeInsets.symmetric(horizontal: 30),
+                              padding : const EdgeInsets.symmetric(horizontal: 30),
                               child : Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -440,7 +440,7 @@ class assestmentScreen03 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
                               color: Colors.white,
-                              border: Border.all(color: Color(0xFF7D944D),
+                              border: Border.all(color: const Color(0xFF7D944D),
                                 width: 2,
                               ),
                               boxShadow: const [
@@ -454,7 +454,7 @@ class assestmentScreen03 extends StatelessWidget {
                             ),
 
                             child : Padding(
-                              padding : EdgeInsets.symmetric(horizontal: 30),
+                              padding : const EdgeInsets.symmetric(horizontal: 30),
                               child : Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -521,7 +521,7 @@ class assestmentScreen03 extends StatelessWidget {
                   ),
                 ),
               
-                SizedBox(
+                const SizedBox(
                   height:35 ,
                 ),
 
@@ -529,7 +529,7 @@ class assestmentScreen03 extends StatelessWidget {
                   width: double.infinity,
                   height: 30,
 
-                  child : Row(
+                  child : const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.warning_amber_outlined,
@@ -548,7 +548,7 @@ class assestmentScreen03 extends StatelessWidget {
                   ),
                 ),
               
-                SizedBox(
+                const SizedBox(
                   height:30 ,
                 ),
 
@@ -556,7 +556,7 @@ class assestmentScreen03 extends StatelessWidget {
                   width: 170,
                   height: 40,
                   decoration: BoxDecoration(
-                    color: Color(0xFF7D944D),
+                    color: const Color(0xFF7D944D),
                     borderRadius: BorderRadius.circular(40),
                     boxShadow: const [
                             BoxShadow(
@@ -568,7 +568,7 @@ class assestmentScreen03 extends StatelessWidget {
                           ],
                   ),
 
-                  child : Center(
+                  child : const Center(
                     child : Text("Lanjutkan",
                     style: TextStyle(
                       fontFamily: 'Poppins',

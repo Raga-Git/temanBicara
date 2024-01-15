@@ -12,14 +12,14 @@ class assestmentScreen07 extends StatelessWidget {
           width: 1080,
           height: 900,
           clipBehavior: Clip.antiAlias,
-          decoration: ShapeDecoration(
+          decoration: const ShapeDecoration(
             color: Color(0xFFFEFFFD),
             shape: RoundedRectangleBorder(
             ),
           ),
           child: Stack(
             children: [
-              Positioned(
+              const Positioned(
                 left: 69,
                 top: 98,
                 child: Text(
@@ -34,7 +34,7 @@ class assestmentScreen07 extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(
+              const Positioned(
                 left: 32,
                 top: 179,
                 child: Text(
@@ -63,11 +63,11 @@ class assestmentScreen07 extends StatelessWidget {
                           width: 67,
                           height: 27,
                           decoration: ShapeDecoration(
-                            color: Color(0xFF7D944D),
+                            color: const Color(0xFF7D944D),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50),
                             ),
-                            shadows: [
+                            shadows: const [
                               BoxShadow(
                                 color: Color(0x3F000000),
                                 blurRadius: 5,
@@ -78,7 +78,7 @@ class assestmentScreen07 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 17,
                         top: 15,
                         child: Text(
@@ -112,11 +112,11 @@ class assestmentScreen07 extends StatelessWidget {
                           width: 205,
                           height: 42,
                           decoration: ShapeDecoration(
-                            color: Color(0xFF7D944D),
+                            color: const Color(0xFF7D944D),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50),
                             ),
-                            shadows: [
+                            shadows: const [
                               BoxShadow(
                                 color: Color(0x3F000000),
                                 blurRadius: 5,
@@ -127,7 +127,7 @@ class assestmentScreen07 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 76,
                         top: 22,
                         child: Text(
@@ -165,7 +165,7 @@ class assestmentScreen07 extends StatelessWidget {
                   height: 334,
                   child: Stack(
                     children: [
-                      Positioned(
+                      const Positioned(
                         left: 149,
                         top: 0,
                         child: Text(
@@ -190,7 +190,7 @@ class assestmentScreen07 extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50),
                             ),
-                            shadows: [
+                            shadows: const [
                               BoxShadow(
                                 color: Color(0x3F000000),
                                 blurRadius: 5,
@@ -201,7 +201,7 @@ class assestmentScreen07 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 36,
                         top: 253,
                         child: SizedBox(
@@ -219,7 +219,7 @@ class assestmentScreen07 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 103,
                         top: 253,
                         child: SizedBox(
@@ -237,7 +237,7 @@ class assestmentScreen07 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 183,
                         top: 253,
                         child: Text(
@@ -252,7 +252,7 @@ class assestmentScreen07 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 260,
                         top: 253,
                         child: SizedBox(
@@ -270,7 +270,7 @@ class assestmentScreen07 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 331,
                         top: 253,
                         child: SizedBox(
@@ -288,7 +288,7 @@ class assestmentScreen07 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Positioned(
+                      const Positioned(
                         left: 40,
                         top: 300,
                         child: Text(

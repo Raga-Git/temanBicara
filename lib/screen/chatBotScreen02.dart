@@ -216,12 +216,13 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
           ],
         ),
       ),
-      
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             Row(
               children: [
                 CircleAvatar(
@@ -245,7 +246,9 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
                 ),
               ],
             ),
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -272,7 +275,9 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
                 ),
               ],
             ),
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             Row(
               children: [
                 CircleAvatar(
@@ -292,11 +297,14 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
                       borderRadius: BorderRadius.circular(50),
                       border: Border.all(color: const Color(0xFF7D944D))),
                   padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
-                  child: Text('Kamu bisa cerita disini. Aku selalu \n siap mendengarkan'),
+                  child: Text(
+                      'Kamu bisa cerita disini. Aku selalu \n siap mendengarkan'),
                 ),
               ],
             ),
-            SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [

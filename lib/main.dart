@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:teman_bicara/screen/artikelScreen1.dart';
 import 'package:teman_bicara/screen/artikelScreen2.dart';
@@ -32,8 +34,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+<<<<<<< HEAD
       theme: tema,
       home: artikelScreen2(),
+=======
+      home: ChatBotScreen01(),
+>>>>>>> 5ba72d0824379f12361167564f373017279ac3b8
     );
   }
 }
