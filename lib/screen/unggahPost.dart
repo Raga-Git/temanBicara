@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class UnggahJurnal extends StatelessWidget {
+class Unggahartikel extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return MaterialApp (

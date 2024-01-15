@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:teman_bicara/screen/artikelScreen.dart';
+import 'package:teman_bicara/screen/artikelScreen1.dart';
 
 class ChatBotScreen01 extends StatefulWidget {
   @override
@@ -48,7 +49,7 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
           IconButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => artikelScreen()));
+                    MaterialPageRoute(builder: (context) => artikelScreen1()));
               },
               icon: const Icon(
                 Icons.article_outlined,
@@ -143,6 +144,10 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
             ListTile(
               title: const Text('Profile'),
               leading: Icon(Icons.person),
+              trailing: Image.asset(
+                'assets/images/panahKanan.png',
+                scale: 2,
+              ),
               onTap: () {
                 Navigator.pop(context);
               },
@@ -150,6 +155,10 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
             ListTile(
               title: const Text('Message'),
               leading: Icon(Icons.send),
+              trailing: Image.asset(
+                'assets/images/panahKanan.png',
+                scale: 2,
+              ),
               onTap: () {
                 Navigator.pop(context);
               },
@@ -157,6 +166,10 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
             ListTile(
               title: const Text('Tracking'),
               leading: Icon(Icons.track_changes),
+              trailing: Image.asset(
+                'assets/images/panahKanan.png',
+                scale: 2,
+              ),
               onTap: () {
                 Navigator.pop(context);
               },
@@ -164,9 +177,18 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
             ListTile(
               title: const Text('Mental Record'),
               leading: Icon(Icons.history),
+              trailing: Image.asset(
+                'assets/images/panahKanan.png',
+                scale: 2,
+              ),
               onTap: () {
                 Navigator.pop(context);
               },
+            ),
+            Divider(
+              indent: 20,
+              endIndent: 20,
+              thickness: 2, 
             ),
             ListTile(
               title: const Text('Help Center'),
@@ -195,61 +217,66 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
           ],
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center, 
-          children: [
-          Image.asset(
-            'assets/images/logo.png',
-            scale: 2,
-          ),
-          Text(
-            'Teman Bicara',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Color(0xFF7D944D),
-              fontSize: 20,
-              fontFamily: 'Poppins',
-              fontWeight: FontWeight.w600,
-              height: 1,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'assets/images/logo.png',
+                  scale: 2,
+                ),
+                Text(
+                  'Teman Bicara',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color(0xFF7D944D),
+                    fontSize: 20,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w600,
+                    height: 1,
+                  ),
+                ),
+                const Text(
+                  'Jangan berjuang sendiri, \nAku ada di sini untukmu.\n',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color(0xFF7D944D),
+                    fontSize: 12,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w600,
+                    height: 1,
+                  ),
+                ),
+                const Text(
+                  'Aku siap membantu untuk meningkatkan \nkesehatan mentalmu.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color(0xFF9B9B9B),
+                    fontSize: 12,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w600,
+                    height: 1,
+                  ),
+                ),
+                const Text(
+                  'Yuk Bercerita!',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Color(0xFF9B9B9B),
+                    fontSize: 12,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w600,
+                    height: 1,
+                  ),
+                ),
+              ],
             ),
           ),
-
-          // const Text(
-          //   'Jangan berjuang sendiri, \nAku ada di sini untukmu.\n',
-          //   textAlign: TextAlign.center,
-          //   style: TextStyle(
-          //     color: Color(0xFF7D944D),
-          //     fontSize: 12,
-          //     fontFamily: 'Poppins',
-          //     fontWeight: FontWeight.w600,
-          //     height: 1,
-          //   ),
-          // ),
-          // const Text(
-          //   'Aku siap membantu untuk meningkatkan \nkesehatan mentalmu.',
-          //   textAlign: TextAlign.center,
-          //   style: TextStyle(
-          //     color: Color(0xFF9B9B9B),
-          //     fontSize: 12,
-          //     fontFamily: 'Poppins',
-          //     fontWeight: FontWeight.w600,
-          //     height: 1,
-          //   ),
-          // ),
-          // const Text(
-          //   'Yuk Bercerita!',
-          //   textAlign: TextAlign.center,
-          //   style: TextStyle(
-          //     color: Color(0xFF9B9B9B),
-          //     fontSize: 12,
-          //     fontFamily: 'Poppins',
-          //     fontWeight: FontWeight.w600,
-          //     height: 1,
-          //   ),
-          // ),
           _buildUserInput()
-        ]),
+        ],
       ),
     );
   }
