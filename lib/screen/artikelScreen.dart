@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:teman_bicara/screen/ChatBotScreen.dart';
 import 'package:teman_bicara/screen/chatBotScreen01.dart';
 
 class artikelScreen extends StatelessWidget {

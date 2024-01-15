@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-class AssesmentPage3 extends StatelessWidget {
-  const AssesmentPage3({super.key});
-  @override
-     Widget build(BuildContext context) {
+class assestmentScreen03 extends StatelessWidget {
+   Widget build(BuildContext context) {
     return MaterialApp (
       debugShowCheckedModeBanner: false,
       home : Scaffold(
@@ -28,7 +26,7 @@ class AssesmentPage3 extends StatelessWidget {
                       child : Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                           Image.asset('assets/images/logo.png'), 
+                          // Image.asset('assets/images/logo.png'), // 
                           Text("Assesment",
                             style : TextStyle(
                               fontFamily: 'Poppins',

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:teman_bicara/screen/chatBotScreen.dart';
-import 'package:teman_bicara/screen/loginScreen.dart';
 import 'package:teman_bicara/screen/registerScreen.dart';
 
 class splashScreen extends StatelessWidget {

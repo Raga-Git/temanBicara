@@ -137,7 +137,9 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
                 ],
               ),
             ),
-            SizedBox(height: 30,),
+            SizedBox(
+              height: 30,
+            ),
             ListTile(
               title: const Text('Profile'),
               leading: Icon(Icons.person),
@@ -173,7 +175,9 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
                 Navigator.pop(context);
               },
             ),
-            SizedBox(height: 99,),
+            SizedBox(
+              height: 99,
+            ),
             ListTile(
               title: const Text('Settings'),
               leading: Icon(Icons.settings),
@@ -192,24 +196,25 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
         ),
       ),
       body: Center(
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Expanded(
-            child: Image.asset(
-              'assets/images/logo.png',
-              scale: 2,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center, 
+          children: [
+          Image.asset(
+            'assets/images/logo.png',
+            scale: 2,
+          ),
+          Text(
+            'Teman Bicara',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Color(0xFF7D944D),
+              fontSize: 20,
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w600,
+              height: 1,
             ),
           ),
-          // const Text(
-          //   'Teman Bicara',
-          //   textAlign: TextAlign.center,
-          //   style: TextStyle(
-          //     color: Color(0xFF7D944D),
-          //     fontSize: 20,
-          //     fontFamily: 'Poppins',
-          //     fontWeight: FontWeight.w600,
-          //     height: 2,
-          //   ),
-          // ),
+
           // const Text(
           //   'Jangan berjuang sendiri, \nAku ada di sini untukmu.\n',
           //   textAlign: TextAlign.center,
