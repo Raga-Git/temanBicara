@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:teman_bicara/screen/button.dart';
 import 'package:teman_bicara/screen/loginTextField.dart';
 class loginScreen extends StatelessWidget {
+ 
   const loginScreen({super.key});
 
+  void login(){
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -264,37 +269,11 @@ class loginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
-                  left: 41,
-                  top: 567,
-                  child: Container(
-                    width: 312,
-                    height: 52,
-                    decoration: ShapeDecoration(
-                      color: Color(0xFF7D944D),
-                      shape: RoundedRectangleBorder(
-                        side: BorderSide(width: 1, color: Color(0x66A4A4A4)),
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                    ),
-                  ),
+                
+                tombol(
+                  text: "Masuk",
+                  onTap: login,
                 ),
-                Positioned(
-                  left: 169,
-                  top: 597,
-                  child: Text(
-                    'Masuk',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Color(0xFFFEFFFA),
-                      fontSize: 16,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w700,
-                      height: 0.08,
-                    ),
-                  ),
-                ),
-
                 Positioned(
                   left: 15,
                   top: 331,
