@@ -36,11 +36,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: tema,
-<<<<<<< HEAD
-      home: ChatBotScreen01(),
-=======
       home: loginScreen(),
->>>>>>> a7fad1cb3bd07dd72876db5e89284c6b8cda67bb
     );
   }
 }

@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:teman_bicara/screen/button.dart';
 import 'package:teman_bicara/screen/loginTextField.dart';
+import 'package:teman_bicara/screen/chatBotScreen01.dart';
 class loginScreen extends StatelessWidget {
  
   const loginScreen({super.key});
-
-  void login(){
-
-  }
-
+  void login(){}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -270,9 +267,15 @@ class loginScreen extends StatelessWidget {
                   ),
                 ),
                 
-                tombol(
-                  text: "Masuk",
-                  onTap: login,
+               Tombol(
+                    text: "Masuk",
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ChatBotScreen01()),
+                      );
+                    },
                 ),
                 Positioned(
                   left: 15,
@@ -388,9 +391,7 @@ class loginScreen extends StatelessWidget {
           ),
         ],
       ),
-
      )),
   );
 }
-
 }
