@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:teman_bicara/screen/chatBotScreen01.dart';
 
 class artikelScreen2 extends StatelessWidget {
   @override
@@ -11,6 +12,13 @@ class artikelScreen2 extends StatelessWidget {
         toolbarHeight: 87,
         flexibleSpace: Container(
           decoration: const BoxDecoration(
+             boxShadow: [
+              BoxShadow(
+                  color: Colors.grey,
+                  offset: Offset(0, 8),
+                  blurRadius: 40,
+                  spreadRadius: 0)
+            ],
             color: Color(0xFF7D944D),
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(32),
@@ -18,9 +26,15 @@ class artikelScreen2 extends StatelessWidget {
             ),
           ),
         ),
-        title: Image.asset(
-          'assets/images/logoV2.png',
-          scale: 2,
+        title: InkWell(
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ChatBotScreen01()));
+          },
+          child: Image.asset(
+            'assets/images/logoV2.png',
+            scale: 2,
+          ),
         ),
         leading: Builder(
           builder: ((BuildContext context) => IconButton(

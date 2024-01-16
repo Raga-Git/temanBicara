@@ -13,15 +13,28 @@ class artikelScreen1 extends StatelessWidget {
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             color: Color(0xFF7D944D),
+             boxShadow: [
+              BoxShadow(
+                  color: Colors.grey,
+                  offset: Offset(0, 8),
+                  blurRadius: 40,
+                  spreadRadius: 0)
+            ],
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(32),
               bottomRight: Radius.circular(32),
             ),
           ),
         ),
-        title: Image.asset(
-          'assets/images/logoV2.png',
-          scale: 2,
+        title: InkWell(
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ChatBotScreen01()));
+          },
+          child: Image.asset(
+            'assets/images/logoV2.png',
+            scale: 2,
+          ),
         ),
         leading: Builder(
           builder: ((BuildContext context) => IconButton(
@@ -261,8 +274,7 @@ class artikelScreen1 extends StatelessWidget {
                       height: 300,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          border: Border.all(color: const Color(0xFFE0E0E0))
-                          ),
+                          border: Border.all(color: const Color(0xFFE0E0E0))),
                       child: Image.asset(
                         'assets/images/post1.png',
                         scale: 2,
@@ -274,25 +286,38 @@ class artikelScreen1 extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.fromLTRB(30, 60, 10, 10),
                   ),
-                  Image.asset('assets/images/like.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('14.8k', 
-                  style: TextStyle(
-                    fontSize: 13
+                  Image.asset(
+                    'assets/images/like.png',
+                    scale: 2,
                   ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  const Text(
+                    '14.8k',
+                    style: TextStyle(fontSize: 13),
                   ),
                   const Padding(
                     padding: EdgeInsets.fromLTRB(30, 60, 0, 0),
                   ),
-                  Image.asset('assets/images/Bookmark.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('8.3k', 
-                  style: TextStyle(
-                    fontSize: 13
+                  Image.asset(
+                    'assets/images/Bookmark.png',
+                    scale: 2,
                   ),
+                  const SizedBox(
+                    width: 8,
                   ),
-                  const SizedBox(width: 170,),
-                  Image.asset('assets/images/bagikan.png', scale: 2,),
+                  const Text(
+                    '8.3k',
+                    style: TextStyle(fontSize: 13),
+                  ),
+                  const SizedBox(
+                    width: 170,
+                  ),
+                  Image.asset(
+                    'assets/images/bagikan.png',
+                    scale: 2,
+                  ),
                 ],
               ),
               const Divider(),
@@ -334,31 +359,43 @@ class artikelScreen1 extends StatelessWidget {
                   )
                 ],
               ),
-              
               Row(
                 children: [
                   const Padding(
                     padding: EdgeInsets.fromLTRB(30, 60, 10, 10),
                   ),
-                  Image.asset('assets/images/like.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('14.8k', 
-                  style: TextStyle(
-                    fontSize: 13
+                  Image.asset(
+                    'assets/images/like.png',
+                    scale: 2,
                   ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  const Text(
+                    '14.8k',
+                    style: TextStyle(fontSize: 13),
                   ),
                   const Padding(
                     padding: EdgeInsets.fromLTRB(30, 60, 0, 0),
                   ),
-                  Image.asset('assets/images/Bookmark.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('8.3k', 
-                  style: TextStyle(
-                    fontSize: 13
+                  Image.asset(
+                    'assets/images/Bookmark.png',
+                    scale: 2,
                   ),
+                  const SizedBox(
+                    width: 8,
                   ),
-                  const SizedBox(width: 170,),
-                  Image.asset('assets/images/bagikan.png', scale: 2,),
+                  const Text(
+                    '8.3k',
+                    style: TextStyle(fontSize: 13),
+                  ),
+                  const SizedBox(
+                    width: 170,
+                  ),
+                  Image.asset(
+                    'assets/images/bagikan.png',
+                    scale: 2,
+                  ),
                 ],
               ),
               Divider(),
@@ -408,8 +445,7 @@ class artikelScreen1 extends StatelessWidget {
                       height: 300,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          border: Border.all(color: const Color(0xFFE0E0E0))
-                          ),
+                          border: Border.all(color: const Color(0xFFE0E0E0))),
                       child: Image.asset(
                         'assets/images/post2.png',
                         scale: 2,
@@ -421,29 +457,41 @@ class artikelScreen1 extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.fromLTRB(30, 60, 10, 10),
                   ),
-                  Image.asset('assets/images/like.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('14.8k', 
-                  style: TextStyle(
-                    fontSize: 13
+                  Image.asset(
+                    'assets/images/like.png',
+                    scale: 2,
                   ),
+                  const SizedBox(
+                    width: 8,
+                  ),
+                  const Text(
+                    '14.8k',
+                    style: TextStyle(fontSize: 13),
                   ),
                   const Padding(
                     padding: EdgeInsets.fromLTRB(30, 60, 0, 0),
                   ),
-                  Image.asset('assets/images/Bookmark.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('8.3k', 
-                  style: TextStyle(
-                    fontSize: 13
+                  Image.asset(
+                    'assets/images/Bookmark.png',
+                    scale: 2,
                   ),
+                  const SizedBox(
+                    width: 8,
                   ),
-                  const SizedBox(width: 170,),
-                  Image.asset('assets/images/bagikan.png', scale: 2,),
+                  const Text(
+                    '8.3k',
+                    style: TextStyle(fontSize: 13),
+                  ),
+                  const SizedBox(
+                    width: 170,
+                  ),
+                  Image.asset(
+                    'assets/images/bagikan.png',
+                    scale: 2,
+                  ),
                 ],
               ),
               Divider(),
-
             ],
           ),
         ),

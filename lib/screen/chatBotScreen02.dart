@@ -20,6 +20,13 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             color: Color(0xFF7D944D),
+             boxShadow: [
+              BoxShadow(
+                  color: Colors.grey,
+                  offset: Offset(0, 8),
+                  blurRadius: 40,
+                  spreadRadius: 0)
+            ],
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(32),
               bottomRight: Radius.circular(32),
