@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "905220878305",
+    "project_id": "teman-bicara-hackfest",
+    "storage_bucket": "teman-bicara-hackfest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905220878305:android:fdbe0488511c22d570eca0",
+        "android_client_info": {
+          "package_name": "temanbicara.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtOFoHP7kWNGV89d5W0PbJHHuALN43nfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

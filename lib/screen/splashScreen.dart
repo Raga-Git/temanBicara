@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teman_bicara/screen/registerScreen.dart';
+import 'package:teman_bicara/screen/loginOrRegister.dart';
 
 class splashScreen extends StatelessWidget {
   const splashScreen({super.key});
@@ -9,7 +9,7 @@ class splashScreen extends StatelessWidget {
     Future.delayed(const Duration(seconds: 3)).then((value) {
       Navigator.of(context).pushAndRemoveUntil(
           MaterialPageRoute(
-            builder: (context) => registerScreen(),
+            builder: (context) => loginOrRegister(),
           ),
           (route) => false);
     });

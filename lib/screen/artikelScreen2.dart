@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:teman_bicara/screen/chatBotScreen01.dart';
-import 'package:teman_bicara/screen/loginScreen.dart';
+import 'package:teman_bicara/screen/splashScreen.dart';
 import 'package:teman_bicara/screen/trackingPage01.dart';
 
 class artikelScreen2 extends StatelessWidget {
@@ -132,7 +132,7 @@ class artikelScreen2 extends StatelessWidget {
                     children: [
                       Image.asset(
                         'assets/images/emoji05.png',
-                        scale: 2,
+                        scale: 10,
                       ),
                       const SizedBox(
                         width: 12,
@@ -229,7 +229,7 @@ class artikelScreen2 extends StatelessWidget {
                           Navigator.push(
                            context,
                           MaterialPageRoute(
-                            builder: (context) => loginScreen()),
+                            builder: (context) => splashScreen()),
                       );
                         },
             ),

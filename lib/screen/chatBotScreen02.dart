@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:teman_bicara/screen/artikelScreen1.dart';
+import 'package:teman_bicara/screen/splashScreen.dart';
 
 class ChatBotScreen02 extends StatefulWidget {
   @override
@@ -20,7 +21,7 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             color: Color(0xFF7D944D),
-             boxShadow: [
+            boxShadow: [
               BoxShadow(
                   color: Colors.grey,
                   offset: Offset(0, 8),
@@ -130,7 +131,7 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
                     children: [
                       Image.asset(
                         'assets/images/emoji05.png',
-                        scale: 2,
+                        scale: 10,
                       ),
                       SizedBox(
                         width: 12,
@@ -215,9 +216,15 @@ class _ChatBotScreenState extends State<ChatBotScreen02> {
             ),
             ListTile(
               title: const Text('Log Out'),
-              leading: Icon(Icons.logout),
+              leading: const Icon(
+                Icons.logout,
+              ),
               onTap: () {
                 Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => splashScreen()),
+                );
               },
             ),
           ],
