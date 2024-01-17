@@ -36,7 +36,7 @@ class loginScreen extends StatelessWidget {
         ),
         title: Image.asset(
           'assets/images/logoV2.png',
-          scale: 2,
+          scale: 1.5,
         ),
       ),
       body: SafeArea(
@@ -65,38 +65,7 @@ class loginScreen extends StatelessWidget {
               Container(
                 width: 363,
                 height: 55,
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    labelText: "Nama pengguna atau email",
-                    labelStyle: TextStyle(
-                      fontSize: 14,
-                      color: Colors.black54,
-                      fontWeight: FontWeight.w500,
-                    ),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50),
-                      borderSide: BorderSide(
-                        width: 1,
-                        color: Color(0x66A4A4A4),
-                      ),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50),
-                      borderSide: BorderSide(
-                        width: 2,
-                        color: Color(0xFF7D944D),
-                      ),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50),
-                      borderSide: BorderSide(
-                        width: 1,
-                        color: Color(0x66A4A4A4),
-                      ),
-                    ),
-                  ),
-                ),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(50.00)),
                   boxShadow: [
@@ -107,6 +76,37 @@ class loginScreen extends StatelessWidget {
                       spreadRadius: 0,
                     ),
                   ],
+                ),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    labelText: "Nama pengguna atau email",
+                    labelStyle: const TextStyle(
+                      fontSize: 14,
+                      color: Colors.black54,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: const BorderSide(
+                        width: 1,
+                        color: const Color(0x66A4A4A4),
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: const BorderSide(
+                        width: 2,
+                        color: Color(0xFF7D944D),
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: const BorderSide(
+                        width: 1,
+                        color: Color(0x66A4A4A4),
+                      ),
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(
@@ -115,39 +115,7 @@ class loginScreen extends StatelessWidget {
               Container(
                 width: 363,
                 height: 55,
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    labelText: "Kata Sandi",
-                    labelStyle: TextStyle(
-                      fontSize: 14,
-                      color: Colors.black54,
-                      fontWeight: FontWeight.w500,
-                    ),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50),
-                      borderSide: BorderSide(
-                        width: 1,
-                        color: Color(0x66A4A4A4),
-                      ),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50),
-                      borderSide: BorderSide(
-                        width: 2,
-                        color: Color(0xFF7D944D),
-                      ),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50),
-                      borderSide: BorderSide(
-                        width: 1,
-                        color: Color(0x66A4A4A4),
-                      ),
-                    ),
-                    suffixIcon: Image.asset('assets/images/mata.png'),
-                  ),
-                ),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(50.00)),
                   boxShadow: [
@@ -159,15 +127,48 @@ class loginScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+                child: TextFormField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: "Kata Sandi",
+                    labelStyle: const TextStyle(
+                      fontSize: 14,
+                      color: Colors.black54,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: const BorderSide(
+                        width: 1,
+                        color: Color(0x66A4A4A4),
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: const BorderSide(
+                        width: 2,
+                        color: Color(0xFF7D944D),
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: const BorderSide(
+                        width: 1,
+                        color: Color(0x66A4A4A4),
+                      ),
+                    ),
+                    suffixIcon: Image.asset('assets/images/mata.png'),
+                  ),
+                ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 60,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(right: 30),
+                    padding: EdgeInsets.only(right: 30),
                     child: Text(
                       'Lupa Kata Sandi?',
                       style: TextStyle(
@@ -177,7 +178,7 @@ class loginScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               GestureDetector(
@@ -190,7 +191,15 @@ class loginScreen extends StatelessWidget {
                 child: Container(
                   width: 312,
                   height: 52,
-                  child: Center(
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF7D944D),
+                    shape: RoundedRectangleBorder(
+                      side:
+                          const BorderSide(width: 1, color: Color(0x66A4A4A4)),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
+                  child: const Center(
                     child: Text(
                       'Masuk',
                       style: TextStyle(
@@ -200,16 +209,9 @@ class loginScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  decoration: ShapeDecoration(
-                    color: Color(0xFF7D944D),
-                    shape: RoundedRectangleBorder(
-                      side: BorderSide(width: 1, color: Color(0x66A4A4A4)),
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                  ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
@@ -218,11 +220,30 @@ class loginScreen extends StatelessWidget {
                   Container(
                     width: 46,
                     height: 46,
+                    decoration: const ShapeDecoration(
+                      color: Colors.white,
+                      shape: CircleBorder(),
+                      shadows: [
+                        BoxShadow(
+                          color: Color(0x3F000000),
+                          blurRadius: 5,
+                          offset: Offset(1, 1),
+                          spreadRadius: 1,
+                        )
+                      ],
+                    ),
                     child: Image.asset(
                       'assets/images/google.png',
                       scale: 2,
                     ),
-                    decoration: ShapeDecoration(
+                  ),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 46,
+                    height: 46,
+                    decoration: const ShapeDecoration(
                       color: Colors.white,
                       shape: CircleBorder(),
                       shadows: [
@@ -234,41 +255,18 @@ class loginScreen extends StatelessWidget {
                         )
                       ],
                     ),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Container(
-                    width: 46,
-                    height: 46,
                     child: Image.asset(
                       'assets/images/X.png',
                       scale: 2,
                     ),
-                    decoration: ShapeDecoration(
-                      color: Colors.white,
-                      shape: CircleBorder(),
-                      shadows: [
-                        BoxShadow(
-                          color: Color(0x3F000000),
-                          blurRadius: 5,
-                          offset: Offset(1, 1),
-                          spreadRadius: 1,
-                        )
-                      ],
-                    ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                   Container(
                     width: 46,
                     height: 46,
-                    child: Image.asset(
-                      'assets/images/ig.png',
-                      scale: 2,
-                    ),
-                    decoration: ShapeDecoration(
+                    decoration: const ShapeDecoration(
                       color: Colors.white,
                       shape: CircleBorder(),
                       shadows: [
@@ -280,23 +278,27 @@ class loginScreen extends StatelessWidget {
                         )
                       ],
                     ),
+                    child: Image.asset(
+                      'assets/images/ig.png',
+                      scale: 2,
+                    ),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Belum punya akun?',
                     style: TextStyle(
                         color: Colors.black54, fontWeight: FontWeight.bold),
                   ),
                   GestureDetector(
                     onTap: onTap,
-                    child: Text(
+                    child: const Text(
                       'Daftar',
                       style: TextStyle(
                           color: Colors.lightBlueAccent,

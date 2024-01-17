@@ -359,6 +359,9 @@ class artikelScreen1 extends StatelessWidget {
                       )
                     ],
                   ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -414,7 +417,10 @@ class artikelScreen1 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const Divider(),
+                  const Divider(
+                    color: Colors.grey,
+                    thickness: 0.1,
+                  ),
                   const SizedBox(
                     height: 20,
                   ),
@@ -448,7 +454,7 @@ class artikelScreen1 extends StatelessWidget {
                         padding: EdgeInsets.fromLTRB(70, 10, 10, 10),
                       ),
                       Text(
-                        "If you're struggling, don't hesitate to seek help \n from a mental health professional. Therapy and \ncounseling can provide valuable insights, coping \nstrategies, and support tailored to your specific \nneeds.",
+                        "If you're struggling, don't hesitate to seek help \nfrom a mental health professional. Therapy and \ncounseling can provide valuable insights, coping \nstrategies, and support tailored to your specific \nneeds.",
                         style: GoogleFonts.poppins(fontSize: 12),
                       )
                     ],
@@ -492,7 +498,10 @@ class artikelScreen1 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Divider(),
+                  const Divider(
+                    color: Colors.grey,
+                    thickness: 0.1,
+                  ),
                   const SizedBox(
                     height: 20,
                   ),
@@ -530,6 +539,9 @@ class artikelScreen1 extends StatelessWidget {
                         style: GoogleFonts.poppins(fontSize: 12),
                       )
                     ],
+                  ),
+                  SizedBox(
+                    height: 10,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -586,7 +598,10 @@ class artikelScreen1 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Divider(),
+                  const Divider(
+                    color: Colors.grey,
+                    thickness: 0,
+                  ),
                 ],
               ),
             ),

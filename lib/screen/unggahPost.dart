@@ -42,7 +42,9 @@ class Unggahartikel extends StatelessWidget {
                       GestureDetector(
                         onTap: () {
                           Navigator.push(
-                              context, MaterialPageRoute(builder: (context) => artikelScreen2()));
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => artikelScreen2()));
                         },
                         child: Container(
                           width: 100,
@@ -67,24 +69,36 @@ class Unggahartikel extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 50,
+                  height: 40,
                 ),
-                Container(
-                  width: double.infinity,
-                  height: 30,
-                  alignment: Alignment.centerLeft,
-                  child: const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 45),
-                    child: Text(
-                      "Apa yang kamu pikirkan ? ",
-                      style: TextStyle(
-                        color: Color(0xFF9C9C9C),
-                        fontSize: 20,
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Image.asset(
+                      'assets/images/profile1.png',
+                      scale: 2,
+                    ),
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    Expanded(
+                      child: TextField(
+                        minLines: 1,
+                        maxLines: 10,
+                        controller: TextEditingController(),
+                        decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Apa yang kamu pikirkan...',
+                        ),
+                        obscureText: false,
                       ),
                     ),
-                  ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                  ],
                 ),
-                Spacer(),
+                const Spacer(),
                 Container(
                   width: double.infinity,
                   height: 100,
@@ -140,43 +154,8 @@ class Unggahartikel extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 10,
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: TextField(
-                          controller: TextEditingController(),
-                          decoration: InputDecoration(
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(50)),
-                            hintText: '   Ketik apa yang kamu pikirkan...',
-                          ),
-                          obscureText: false,
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(50),
-                            boxShadow: const [
-                              BoxShadow(
-                                  color: Colors.grey,
-                                  offset: Offset(0, 1),
-                                  blurRadius: 5,
-                                  spreadRadius: 1)
-                            ]),
-                        child: IconButton(
-                            onPressed: () {}, icon: const Icon(Icons.send)),
-                      )
-                    ],
-                  ),
+                const SizedBox(
+                  height: 20,
                 ),
               ],
             ),

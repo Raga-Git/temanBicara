@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: tema,
-      home: moodTracker(),
+      home: loginScreen(onTap: () {  },),
     );
   }
 }

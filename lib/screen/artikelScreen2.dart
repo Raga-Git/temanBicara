@@ -233,10 +233,10 @@ class artikelScreen2 extends StatelessWidget {
                         onTap: () {
                           Navigator.pop(context);
                           Navigator.push(
-                           context,
-                          MaterialPageRoute(
-                            builder: (context) => trackingPage01()),
-                      );
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => trackingPage01()),
+                          );
                         },
                         trailing: const Icon(
                           Icons.chevron_right,
@@ -280,12 +280,13 @@ class artikelScreen2 extends StatelessWidget {
                           Navigator.pop(context);
                         },
                       ),
-                      SizedBox(height: 99,),
+                      SizedBox(
+                        height: 99,
+                      ),
                       ListTile(
                         title: const Text('Settings'),
                         leading: const Icon(
                           Icons.settings,
-                          
                         ),
                         onTap: () {
                           Navigator.pop(context);
@@ -295,15 +296,14 @@ class artikelScreen2 extends StatelessWidget {
                         title: const Text('Log Out'),
                         leading: const Icon(
                           Icons.logout,
-                          
                         ),
                         onTap: () {
                           Navigator.pop(context);
                           Navigator.push(
-                           context,
-                          MaterialPageRoute(
-                            builder: (context) => splashScreen()),
-                      );
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => splashScreen()),
+                          );
                         },
                       ),
                     ],
@@ -398,7 +398,10 @@ class artikelScreen2 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const Divider(),
+                  const Divider(
+                    color: Colors.grey,
+                    thickness: 0.2,
+                  ),
                   const SizedBox(
                     height: 20,
                   ),
@@ -437,6 +440,7 @@ class artikelScreen2 extends StatelessWidget {
                       )
                     ],
                   ),
+                  SizedBox(height: 10,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -492,7 +496,10 @@ class artikelScreen2 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const Divider(),
+                  const Divider(
+                    color: Colors.grey,
+                    thickness: 0.1,
+                  ),
                   const SizedBox(
                     height: 20,
                   ),
@@ -526,7 +533,7 @@ class artikelScreen2 extends StatelessWidget {
                         padding: EdgeInsets.fromLTRB(70, 10, 10, 10),
                       ),
                       Text(
-                        "If you're struggling, don't hesitate to seek help \n from a mental health professional. Therapy and \ncounseling can provide valuable insights, coping \nstrategies, and support tailored to your specific \nneeds.",
+                        "If you're struggling, don't hesitate to seek help \nfrom a mental health professional. Therapy and \ncounseling can provide valuable insights, coping \nstrategies, and support tailored to your specific \nneeds.",
                         style: GoogleFonts.poppins(fontSize: 12),
                       )
                     ],
@@ -570,7 +577,10 @@ class artikelScreen2 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Divider(),
+                 const Divider(
+                    color: Colors.grey,
+                    thickness: 0.1,
+                  ),
                   const SizedBox(
                     height: 20,
                   ),
@@ -609,6 +619,7 @@ class artikelScreen2 extends StatelessWidget {
                       )
                     ],
                   ),
+                  SizedBox(height: 10,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -664,7 +675,6 @@ class artikelScreen2 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Divider(),
                 ],
               ),
             ),
