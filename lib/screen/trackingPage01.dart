@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:teman_bicara/screen/trackingPage02.dart';
 
-class trackingPage01 extends StatelessWidget {
-  const trackingPage01({super.key});
+class trackingPage01 extends StatefulWidget {
+  @override
+  _trackingPageState createState() => _trackingPageState();
+}
+class _trackingPageState extends State<trackingPage01> {
 
   @override
   Widget build(BuildContext context) {
@@ -204,11 +208,33 @@ class trackingPage01 extends StatelessWidget {
               ],),
               SizedBox(height: 26,),
               Container(
-                decoration: BoxDecoration( color: const Color(0xFF7D944D), borderRadius: BorderRadius.circular(50)),
-                height: 42,
-                width: 205,
-                child: Center(child: Text('Lanjutkan', style: GoogleFonts.poppins(fontWeight: FontWeight.bold, color: Color(0xFFFEFFFA), fontSize: 14))),
-              ),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF7D944D),
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    height: 42,
+                    width: 205,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => trackingPage02(),
+                          ),
+                        );
+                      },
+                      child: Center(
+                        child: Text(
+                          'Lanjutkan',
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFFFEFFFA),
+                            fontSize: 14,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
               SizedBox(height: 9,)
             ],
           ),

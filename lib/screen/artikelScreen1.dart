@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:teman_bicara/screen/chatBotScreen01.dart';
+import 'package:teman_bicara/screen/loginScreen.dart';
+import 'package:teman_bicara/screen/trackingPage01.dart';
 
 class artikelScreen1 extends StatelessWidget {
   @override
@@ -176,9 +178,14 @@ class artikelScreen1 extends StatelessWidget {
                 'assets/images/panahKanan.png',
                 scale: 2,
               ),
-              onTap: () {
-                Navigator.pop(context);
-              },
+             onTap: () {
+                          Navigator.pop(context);
+                          Navigator.push(
+                           context,
+                          MaterialPageRoute(
+                            builder: (context) => trackingPage01()),
+                      );
+                        },
             ),
             ListTile(
               title: const Text('Mental Record'),
@@ -217,8 +224,13 @@ class artikelScreen1 extends StatelessWidget {
               title: const Text('Log Out'),
               leading: const Icon(Icons.logout),
               onTap: () {
-                Navigator.pop(context);
-              },
+                          Navigator.pop(context);
+                          Navigator.push(
+                           context,
+                          MaterialPageRoute(
+                            builder: (context) => loginScreen()),
+                      );
+                        },
             ),
           ],
         ),

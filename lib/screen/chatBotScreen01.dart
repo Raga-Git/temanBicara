@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:teman_bicara/screen/artikelScreen1.dart';
+import 'package:teman_bicara/screen/loginScreen.dart';
+import 'package:teman_bicara/screen/trackingPage01.dart';
 
 class ChatBotScreen01 extends StatefulWidget {
   @override
@@ -230,6 +232,11 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
                         ),
                         onTap: () {
                           Navigator.pop(context);
+                          Navigator.push(
+                           context,
+                          MaterialPageRoute(
+                            builder: (context) => trackingPage01()),
+                      );
                         },
                         trailing: const Icon(
                           Icons.chevron_right,
@@ -292,6 +299,11 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
                         ),
                         onTap: () {
                           Navigator.pop(context);
+                          Navigator.push(
+                           context,
+                          MaterialPageRoute(
+                            builder: (context) => loginScreen()),
+                      );
                         },
                       ),
                     ],

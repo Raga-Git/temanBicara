@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:teman_bicara/screen/trackingSuccess.dart';
+import 'package:teman_bicara/screen/trackingberhasil.dart';
 
 class trackingPage03 extends StatelessWidget {
   const trackingPage03({super.key});
@@ -93,18 +95,33 @@ class trackingPage03 extends StatelessWidget {
                 height: 183,
               ),
               Container(
-                decoration: BoxDecoration(
-                    color: const Color(0xFF7D944D),
-                    borderRadius: BorderRadius.circular(50)),
-                height: 42,
-                width: 205,
-                child: Center(
-                    child: Text('Lanjutkan',
-                        style: GoogleFonts.poppins(
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF7D944D),
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    height: 42,
+                    width: 205,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => trackingSuccesss(),
+                          ),
+                        );
+                      },
+                      child: Center(
+                        child: Text(
+                          'Lanjutkan',
+                          style: GoogleFonts.poppins(
                             fontWeight: FontWeight.bold,
-                            color: const Color(0xFFFEFFFA),
-                            fontSize: 14))),
-              ),
+                            color: Color(0xFFFEFFFA),
+                            fontSize: 14,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
               const SizedBox(
                 height: 9,
               )
