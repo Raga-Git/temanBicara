@@ -13,6 +13,7 @@ import 'package:teman_bicara/screen/assestmentScreen07.dart';
 import 'package:teman_bicara/screen/assestmentScreenBerhasil.dart';
 import 'package:teman_bicara/screen/ChatBotScreen01.dart';
 import 'package:teman_bicara/screen/ChatBotScreen02.dart';
+import 'package:teman_bicara/screen/history.dart';
 import 'package:teman_bicara/screen/loginScreen.dart';
 import 'package:teman_bicara/screen/moodTracker.dart';
 import 'package:teman_bicara/screen/registerScreen.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: tema,
-      home: loginScreen(onTap: () {  },),
+      home: const HistoryList(),
     );
   }
 }

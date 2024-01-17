@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:teman_bicara/screen/artikelScreen1.dart';
+import 'package:teman_bicara/screen/history.dart';
 import 'package:teman_bicara/screen/splashScreen.dart';
 import 'package:teman_bicara/screen/trackingPage01.dart';
 
@@ -22,7 +23,7 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             color: Color(0xFF7D944D),
-              boxShadow: [
+            boxShadow: [
               BoxShadow(
                   color: Colors.grey,
                   offset: Offset(0, 8),
@@ -231,12 +232,11 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
                           color: Color(0xFF7D944D),
                         ),
                         onTap: () {
-                          Navigator.pop(context);
                           Navigator.push(
-                           context,
-                          MaterialPageRoute(
-                            builder: (context) => trackingPage01()),
-                      );
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => trackingPage01()),
+                          );
                         },
                         trailing: const Icon(
                           Icons.chevron_right,
@@ -253,7 +253,11 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
                           color: Color(0xFF7D944D),
                         ),
                         onTap: () {
-                          Navigator.pop(context);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HistoryList()),
+                          );
                         },
                         trailing: const Icon(
                           Icons.chevron_right,
@@ -280,12 +284,13 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
                           Navigator.pop(context);
                         },
                       ),
-                      SizedBox(height: 99,),
+                      SizedBox(
+                        height: 99,
+                      ),
                       ListTile(
                         title: const Text('Settings'),
                         leading: const Icon(
                           Icons.settings,
-                          
                         ),
                         onTap: () {
                           Navigator.pop(context);
@@ -295,15 +300,14 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
                         title: const Text('Log Out'),
                         leading: const Icon(
                           Icons.logout,
-                          
                         ),
                         onTap: () {
                           Navigator.pop(context);
                           Navigator.push(
-                           context,
-                          MaterialPageRoute(
-                            builder: (context) => splashScreen()),
-                      );
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => splashScreen()),
+                          );
                         },
                       ),
                     ],
