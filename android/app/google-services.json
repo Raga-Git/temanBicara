@@ -7,6 +7,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:905220878305:android:20e907eaac379c8b70eca0",
+        "android_client_info": {
+          "package_name": "com.example.teman_bicara"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtOFoHP7kWNGV89d5W0PbJHHuALN43nfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:905220878305:android:fdbe0488511c22d570eca0",
         "android_client_info": {
           "package_name": "temanbicara.com"
