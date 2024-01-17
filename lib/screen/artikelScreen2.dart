@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:teman_bicara/screen/chatBotScreen01.dart';
-import 'package:teman_bicara/screen/loginScreen.dart';
+import 'package:teman_bicara/screen/splashScreen.dart';
 import 'package:teman_bicara/screen/trackingPage01.dart';
+import 'package:teman_bicara/screen/unggahPost.dart';
 
 class artikelScreen2 extends StatelessWidget {
   @override
@@ -14,7 +15,7 @@ class artikelScreen2 extends StatelessWidget {
         toolbarHeight: 87,
         flexibleSpace: Container(
           decoration: const BoxDecoration(
-             boxShadow: [
+            boxShadow: [
               BoxShadow(
                   color: Colors.grey,
                   offset: Offset(0, 8),
@@ -132,7 +133,7 @@ class artikelScreen2 extends StatelessWidget {
                     children: [
                       Image.asset(
                         'assets/images/emoji05.png',
-                        scale: 2,
+                        scale: 10,
                       ),
                       const SizedBox(
                         width: 12,
@@ -158,13 +159,12 @@ class artikelScreen2 extends StatelessWidget {
                 scale: 2,
               ),
               onTap: () {
-                          Navigator.pop(context);
-                          Navigator.push(
-                           context,
-                          MaterialPageRoute(
-                            builder: (context) => trackingPage01()),
-                      );
-                        },
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => trackingPage01()),
+                );
+              },
             ),
             ListTile(
               title: const Text('Message'),
@@ -225,318 +225,386 @@ class artikelScreen2 extends StatelessWidget {
               title: const Text('Log Out'),
               leading: const Icon(Icons.logout),
               onTap: () {
-                          Navigator.pop(context);
-                          Navigator.push(
-                           context,
-                          MaterialPageRoute(
-                            builder: (context) => loginScreen()),
-                      );
-                        },
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => splashScreen()),
+                );
+              },
             ),
           ],
         ),
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const SizedBox(
-                height: 20,
-              ),
-              Row(
+        child: Stack(
+          children: [
+            SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                  ),
-                  Image.asset('assets/images/profile1.png', scale: 2),
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(5, 10, 10, 10),
-                  ),
-                  Text(
-                    'Alex Tomahawk',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w600, fontSize: 15),
-                  ),
                   const SizedBox(
-                    width: 8,
+                    height: 20,
                   ),
-                  Text(
-                    '@alex_thehawk',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w300, fontSize: 12),
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                      ),
+                      Image.asset('assets/images/profile1.png', scale: 2),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(5, 10, 10, 10),
+                      ),
+                      Text(
+                        'Alex Tomahawk',
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w600, fontSize: 15),
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        '@alex_thehawk',
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w300, fontSize: 12),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-              Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(70, 10, 10, 10),
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(70, 10, 10, 10),
+                      ),
+                      Text(
+                        'Persentase kesehatan mentalku naik akhir-akhir \nini, semoga aku bisa menjaganya tetap stabil  ',
+                        style: GoogleFonts.poppins(fontSize: 12),
+                      )
+                    ],
                   ),
-                  Text(
-                    'Persentase kesehatan mentalku naik akhir-akhir \nini, semoga aku bisa menjaganya tetap stabil  ',
-                    style: GoogleFonts.poppins(fontSize: 12),
-                  )
-                ],
-              ),
-              Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(30, 60, 10, 10),
-                  ),
-                  Image.asset('assets/images/like.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('14.8k', 
-                  style: TextStyle(
-                    fontSize: 13
-                  ),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(30, 60, 0, 0),
-                  ),
-                  Image.asset('assets/images/Bookmark.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('8.3k', 
-                  style: TextStyle(
-                    fontSize: 13
-                  ),
-                  ),
-                  const SizedBox(width: 170,),
-                  Image.asset('assets/images/bagikan.png', scale: 2,),
-                ],
-              ),
-              const Divider(),
-              const SizedBox(
-                height: 20,
-              ),
-              Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                  ),
-                  Image.asset('assets/images/profile1.png', scale: 2),
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(5, 10, 10, 10),
-                  ),
-                  Text(
-                    'Alex Tomahawk',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w600, fontSize: 15),
-                  ),
-                  const SizedBox(
-                    width: 8,
-                  ),
-                  Text(
-                    '@alex_thehawk',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w300, fontSize: 12),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(70, 10, 10, 10),
-                  ),
-                  Text(
-                    'I love this picture!',
-                    style: GoogleFonts.poppins(fontSize: 12),
-                  )
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                      width: 350,
-                      height: 300,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          border: Border.all(color: const Color(0xFFE0E0E0))
-                          ),
-                      child: Image.asset(
-                        'assets/images/post1.png',
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(30, 60, 10, 10),
+                      ),
+                      Image.asset(
+                        'assets/images/like.png',
                         scale: 2,
-                      )),
-                ],
-              ),
-              Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(30, 60, 10, 10),
-                  ),
-                  Image.asset('assets/images/like.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('14.8k', 
-                  style: TextStyle(
-                    fontSize: 13
-                  ),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(30, 60, 0, 0),
-                  ),
-                  Image.asset('assets/images/Bookmark.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('8.3k', 
-                  style: TextStyle(
-                    fontSize: 13
-                  ),
-                  ),
-                  const SizedBox(width: 170,),
-                  Image.asset('assets/images/bagikan.png', scale: 2,),
-                ],
-              ),
-              const Divider(),
-              const SizedBox(
-                height: 20,
-              ),
-              Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                  ),
-                  Image.asset('assets/images/profile2.png', scale: 2),
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(5, 10, 10, 10),
-                  ),
-                  Text(
-                    'Han So-hee',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w600, fontSize: 15),
-                  ),
-                  const SizedBox(
-                    width: 8,
-                  ),
-                  Text(
-                    '@xeesoxee',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w300, fontSize: 12),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(70, 10, 10, 10),
-                  ),
-                  Text(
-                    "If you're struggling, don't hesitate to seek help \n from a mental health professional. Therapy and \ncounseling can provide valuable insights, coping \nstrategies, and support tailored to your specific \nneeds.",
-                    style: GoogleFonts.poppins(fontSize: 12),
-                  )
-                ],
-              ),
-              
-              Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(30, 60, 10, 10),
-                  ),
-                  Image.asset('assets/images/like.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('14.8k', 
-                  style: TextStyle(
-                    fontSize: 13
-                  ),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(30, 60, 0, 0),
-                  ),
-                  Image.asset('assets/images/Bookmark.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('8.3k', 
-                  style: TextStyle(
-                    fontSize: 13
-                  ),
-                  ),
-                  const SizedBox(width: 170,),
-                  Image.asset('assets/images/bagikan.png', scale: 2,),
-                ],
-              ),
-              Divider(),
-              const SizedBox(
-                height: 20,
-              ),
-              Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                  ),
-                  Image.asset('assets/images/profile2.png', scale: 2),
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(5, 10, 10, 10),
-                  ),
-                  Text(
-                    'Han So-hee',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w600, fontSize: 15),
-                  ),
-                  const SizedBox(
-                    width: 8,
-                  ),
-                  Text(
-                    '@xeesoxee',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w300, fontSize: 12),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(70, 10, 10, 10),
-                  ),
-                  Text(
-                    "Look at this cutieee <3",
-                    style: GoogleFonts.poppins(fontSize: 12),
-                  )
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                      width: 350,
-                      height: 300,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          border: Border.all(color: const Color(0xFFE0E0E0))
-                          ),
-                      child: Image.asset(
-                        'assets/images/post2.png',
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Text(
+                        '14.8k',
+                        style: TextStyle(fontSize: 13),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(30, 60, 0, 0),
+                      ),
+                      Image.asset(
+                        'assets/images/Bookmark.png',
                         scale: 2,
-                      )),
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Text(
+                        '8.3k',
+                        style: TextStyle(fontSize: 13),
+                      ),
+                      const SizedBox(
+                        width: 170,
+                      ),
+                      Image.asset(
+                        'assets/images/bagikan.png',
+                        scale: 2,
+                      ),
+                    ],
+                  ),
+                  const Divider(),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                      ),
+                      Image.asset('assets/images/profile1.png', scale: 2),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(5, 10, 10, 10),
+                      ),
+                      Text(
+                        'Alex Tomahawk',
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w600, fontSize: 15),
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        '@alex_thehawk',
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w300, fontSize: 12),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(70, 10, 10, 10),
+                      ),
+                      Text(
+                        'I love this picture!',
+                        style: GoogleFonts.poppins(fontSize: 12),
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                          width: 350,
+                          height: 300,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              border:
+                                  Border.all(color: const Color(0xFFE0E0E0))),
+                          child: Image.asset(
+                            'assets/images/post1.png',
+                            scale: 2,
+                          )),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(30, 60, 10, 10),
+                      ),
+                      Image.asset(
+                        'assets/images/like.png',
+                        scale: 2,
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Text(
+                        '14.8k',
+                        style: TextStyle(fontSize: 13),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(30, 60, 0, 0),
+                      ),
+                      Image.asset(
+                        'assets/images/Bookmark.png',
+                        scale: 2,
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Text(
+                        '8.3k',
+                        style: TextStyle(fontSize: 13),
+                      ),
+                      const SizedBox(
+                        width: 170,
+                      ),
+                      Image.asset(
+                        'assets/images/bagikan.png',
+                        scale: 2,
+                      ),
+                    ],
+                  ),
+                  const Divider(),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                      ),
+                      Image.asset('assets/images/profile2.png', scale: 2),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(5, 10, 10, 10),
+                      ),
+                      Text(
+                        'Han So-hee',
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w600, fontSize: 15),
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        '@xeesoxee',
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w300, fontSize: 12),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(70, 10, 10, 10),
+                      ),
+                      Text(
+                        "If you're struggling, don't hesitate to seek help \n from a mental health professional. Therapy and \ncounseling can provide valuable insights, coping \nstrategies, and support tailored to your specific \nneeds.",
+                        style: GoogleFonts.poppins(fontSize: 12),
+                      )
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(30, 60, 10, 10),
+                      ),
+                      Image.asset(
+                        'assets/images/like.png',
+                        scale: 2,
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Text(
+                        '14.8k',
+                        style: TextStyle(fontSize: 13),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(30, 60, 0, 0),
+                      ),
+                      Image.asset(
+                        'assets/images/Bookmark.png',
+                        scale: 2,
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Text(
+                        '8.3k',
+                        style: TextStyle(fontSize: 13),
+                      ),
+                      const SizedBox(
+                        width: 170,
+                      ),
+                      Image.asset(
+                        'assets/images/bagikan.png',
+                        scale: 2,
+                      ),
+                    ],
+                  ),
+                  Divider(),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                      ),
+                      Image.asset('assets/images/profile2.png', scale: 2),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(5, 10, 10, 10),
+                      ),
+                      Text(
+                        'Han So-hee',
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w600, fontSize: 15),
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        '@xeesoxee',
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w300, fontSize: 12),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(70, 10, 10, 10),
+                      ),
+                      Text(
+                        "Look at this cutieee <3",
+                        style: GoogleFonts.poppins(fontSize: 12),
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                          width: 350,
+                          height: 300,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              border:
+                                  Border.all(color: const Color(0xFFE0E0E0))),
+                          child: Image.asset(
+                            'assets/images/post2.png',
+                            scale: 2,
+                          )),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(30, 60, 10, 10),
+                      ),
+                      Image.asset(
+                        'assets/images/like.png',
+                        scale: 2,
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Text(
+                        '14.8k',
+                        style: TextStyle(fontSize: 13),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.fromLTRB(30, 60, 0, 0),
+                      ),
+                      Image.asset(
+                        'assets/images/Bookmark.png',
+                        scale: 2,
+                      ),
+                      const SizedBox(
+                        width: 8,
+                      ),
+                      const Text(
+                        '8.3k',
+                        style: TextStyle(fontSize: 13),
+                      ),
+                      const SizedBox(
+                        width: 170,
+                      ),
+                      Image.asset(
+                        'assets/images/bagikan.png',
+                        scale: 2,
+                      ),
+                    ],
+                  ),
+                  Divider(),
                 ],
               ),
-              Row(
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(30, 60, 10, 10),
-                  ),
-                  Image.asset('assets/images/like.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('14.8k', 
-                  style: TextStyle(
-                    fontSize: 13
-                  ),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(30, 60, 0, 0),
-                  ),
-                  Image.asset('assets/images/Bookmark.png', scale: 2,),
-                  const SizedBox(width: 8,),
-                  const Text('8.3k', 
-                  style: TextStyle(
-                    fontSize: 13
-                  ),
-                  ),
-                  const SizedBox(width: 170,),
-                  Image.asset('assets/images/bagikan.png', scale: 2,),
-                ],
+            ),
+            Positioned(
+              bottom: 40.0,
+              right: 30.0,
+              child: FloatingActionButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: ((context) => Unggahartikel())));
+                },
+                child: Icon(Icons.add),
+                backgroundColor: Color(0xFF7D944D),
+                shape: CircleBorder(),
               ),
-              Divider(),
-
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

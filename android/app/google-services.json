@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "616452367802",
+    "project_id": "temanbicara-r2bh",
+    "storage_bucket": "temanbicara-r2bh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616452367802:android:0a9e54b9a5bd8ba70d2983",
+        "android_client_info": {
+          "package_name": "com.example.teman_bicara"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqgsDnc0z3rFzx6zcw4cfyax1o0lJBGwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

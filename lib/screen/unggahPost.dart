@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teman_bicara/screen/artikelScreen2.dart';
 
 class Unggahartikel extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -39,19 +40,26 @@ class Unggahartikel extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Container(
-                        width: 100,
-                        height: 30,
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF7D944D),
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: const Center(
-                          child: Text(
-                            "Unggah",
-                            style: TextStyle(
-                              color: Color(0xFFFFFFFF),
-                              fontSize: 13,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context, MaterialPageRoute(builder: (context) => artikelScreen2()));
+                        },
+                        child: Container(
+                          width: 100,
+                          height: 30,
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF7D944D),
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                          child: const Center(
+                            child: Text(
+                              "Unggah",
+                              style: TextStyle(
+                                color: Color(0xFFFFFFFF),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 13,
+                              ),
                             ),
                           ),
                         ),
@@ -77,9 +85,7 @@ class Unggahartikel extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(
-                  height: 226,
-                ),
+                Spacer(),
                 Container(
                   width: double.infinity,
                   height: 100,
@@ -132,6 +138,44 @@ class Unggahartikel extends StatelessWidget {
                         Icons.info_outline_rounded,
                         color: Color(0xFF90A5D1),
                       ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          controller: TextEditingController(),
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(50)),
+                            hintText: '   Yuk Ngobrol',
+                          ),
+                          obscureText: false,
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(50),
+                            boxShadow: const [
+                              BoxShadow(
+                                  color: Colors.grey,
+                                  offset: Offset(0, 1),
+                                  blurRadius: 5,
+                                  spreadRadius: 1)
+                            ]),
+                        child: IconButton(
+                            onPressed: () {}, icon: const Icon(Icons.send)),
+                      )
                     ],
                   ),
                 ),
