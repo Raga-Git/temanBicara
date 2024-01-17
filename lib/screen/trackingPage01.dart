@@ -140,7 +140,7 @@ class _trackingPageState extends State<trackingPage01> {
                           ),
                         ),
                         Text(
-                          '8 - 9 jam',
+                          '7 - 8 jam',
                           style: GoogleFonts.poppins(
                             fontWeight: FontWeight.w500,
                             color: isBaikTapped
@@ -197,7 +197,7 @@ class _trackingPageState extends State<trackingPage01> {
                           ),
                         ),
                         Text(
-                          '8 - 9 jam',
+                          '6 jam',
                           style: GoogleFonts.poppins(
                             fontWeight: FontWeight.w500,
                             color: isCukupTapped
@@ -255,7 +255,7 @@ class _trackingPageState extends State<trackingPage01> {
                           ),
                         ),
                         Text(
-                          '8 - 9 jam',
+                          '4 - 5 jam',
                           style: GoogleFonts.poppins(
                             fontWeight: FontWeight.w500,
                             color: isKurangTapped
@@ -313,7 +313,7 @@ class _trackingPageState extends State<trackingPage01> {
                           ),
                         ),
                         Text(
-                          '8 - 9 jam',
+                          '< 4 jam',
                           style: GoogleFonts.poppins(
                             fontWeight: FontWeight.w500,
                             color: isInsomniaTapped

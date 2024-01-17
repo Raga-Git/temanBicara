@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: tema,
-      home: artikelScreen2(),
+      home: Unggahartikel(),
     );
   }
 }
