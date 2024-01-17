@@ -69,168 +69,247 @@ class artikelScreen2 extends StatelessWidget {
         ],
       ),
       drawer: Drawer(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white.withOpacity(0.9),
         child: ListView(
           children: [
-            DrawerHeader(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    height: 80,
-                    width: 301,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(12),
-                        boxShadow: const [
-                          BoxShadow(
-                              color: Colors.grey,
-                              offset: Offset(0, 2),
-                              blurRadius: 8,
-                              spreadRadius: 0)
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 80,
+                        width: 301,
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: const [
+                              BoxShadow(
+                                  color: Colors.grey,
+                                  offset: Offset(0, 2),
+                                  blurRadius: 8,
+                                  spreadRadius: 0)
+                            ]),
+                        child: Row(children: [
+                          const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 17)),
+                          Image.asset(
+                            'assets/images/profile1.png',
+                            scale: 2,
+                          ),
+                          const SizedBox(
+                            width: 14,
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Andi Andinata',
+                                style: GoogleFonts.poppins(
+                                    fontSize: 16, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                '@andi_andinata',
+                                style: GoogleFonts.poppins(
+                                  fontSize: 12,
+                                ),
+                              )
+                            ],
+                          )
                         ]),
-                    child: Row(children: [
-                      const Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 17)),
-                      Image.asset(
-                        'assets/images/profile1.png',
-                        scale: 2,
                       ),
                       const SizedBox(
-                        width: 14,
+                        height: 14,
                       ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 33),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Your Mental Health',
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.bold, fontSize: 12),
+                      ),
+                      const SizedBox(
+                        height: 11,
+                      ),
+                      Row(
                         children: [
-                          Text(
-                            'Andi Andinata',
-                            style: GoogleFonts.poppins(
-                                fontSize: 16, fontWeight: FontWeight.bold),
+                          const Icon(
+                            Icons.emoji_emotions,
+                            color: Color(0xFF7D944D),
+                          ),
+                          const SizedBox(
+                            width: 12,
                           ),
                           Text(
-                            '@andi_andinata',
-                            style: GoogleFonts.poppins(
-                              fontSize: 12,
-                            ),
-                          )
+                            '84% Happy',
+                            style: GoogleFonts.poppins(fontSize: 12),
+                          ),
+                          const SizedBox(
+                            width: 12,
+                          ),
+                          Image.asset(
+                            'assets/images/emoji05.png',
+                            scale: 10,
+                          ),
+                          const SizedBox(
+                            width: 12,
+                          ),
+                          Text(
+                            'Happy Mood',
+                            style: GoogleFonts.poppins(fontSize: 12),
+                          ),
                         ],
-                      )
-                    ]),
+                      ),
+                    ],
                   ),
-                  const SizedBox(
-                    height: 14,
+                ),
+                const SizedBox(
+                  height: 12,
+                ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 28),
+                  child: Divider(
+                    color: Colors.grey,
+                    thickness: 1,
                   ),
-                  Text(
-                    'Your Mental Health',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.bold, fontSize: 12),
-                  ),
-                  const SizedBox(
-                    height: 2,
-                  ),
-                  Row(
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
                     children: [
-                      Image.asset(
-                        'assets/images/emoji05.png',
-                        scale: 10,
+                      const SizedBox(
+                        height: 22,
+                      ),
+                      ListTile(
+                        title: const Text('Profile'),
+                        leading: const Icon(
+                          Icons.person,
+                          color: Color(0xFF7D944D),
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        trailing: const Icon(
+                          Icons.chevron_right,
+                          size: 27,
+                        ),
                       ),
                       const SizedBox(
-                        width: 12,
+                        height: 10,
                       ),
-                      Text(
-                        '84% Happy',
-                        style: GoogleFonts.poppins(fontSize: 12),
-                      )
+                      ListTile(
+                        title: const Text('Message'),
+                        leading: const Icon(
+                          Icons.send,
+                          color: Color(0xFF7D944D),
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        trailing: const Icon(
+                          Icons.chevron_right,
+                          size: 27,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      ListTile(
+                        title: const Text('Tracking'),
+                        leading: const Icon(
+                          Icons.track_changes,
+                          color: Color(0xFF7D944D),
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                          Navigator.push(
+                           context,
+                          MaterialPageRoute(
+                            builder: (context) => trackingPage01()),
+                      );
+                        },
+                        trailing: const Icon(
+                          Icons.chevron_right,
+                          size: 27,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      ListTile(
+                        title: const Text('Mental Record'),
+                        leading: const Icon(
+                          Icons.history,
+                          color: Color(0xFF7D944D),
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        trailing: const Icon(
+                          Icons.chevron_right,
+                          size: 27,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 42,
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        child: Divider(
+                          color: Colors.grey,
+                          thickness: 1,
+                        ),
+                      ),
+                      ListTile(
+                        title: const Text('Help Center'),
+                        leading: const Icon(
+                          Icons.help_outline,
+                          color: Color(0xFF7D944D),
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                      SizedBox(height: 99,),
+                      ListTile(
+                        title: const Text('Settings'),
+                        leading: const Icon(
+                          Icons.settings,
+                          
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                      ListTile(
+                        title: const Text('Log Out'),
+                        leading: const Icon(
+                          Icons.logout,
+                          
+                        ),
+                        onTap: () {
+                          Navigator.pop(context);
+                          Navigator.push(
+                           context,
+                          MaterialPageRoute(
+                            builder: (context) => splashScreen()),
+                      );
+                        },
+                      ),
                     ],
-                  )
-                ],
-              ),
-            ),
-            const SizedBox(
-              height: 30,
-            ),
-            ListTile(
-              title: const Text('Profile'),
-              leading: const Icon(Icons.person),
-              iconColor: Color(0xFF7D944D),
-              trailing: Image.asset(
-                'assets/images/panahKanan.png',
-                scale: 2,
-              ),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => trackingPage01()),
-                );
-              },
-            ),
-            ListTile(
-              title: const Text('Message'),
-              leading: const Icon(Icons.send),
-              trailing: Image.asset(
-                'assets/images/panahKanan.png',
-                scale: 2,
-              ),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              title: const Text('Tracking'),
-              leading: const Icon(Icons.track_changes),
-              trailing: Image.asset(
-                'assets/images/panahKanan.png',
-                scale: 2,
-              ),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              title: const Text('Mental Record'),
-              leading: const Icon(Icons.history),
-              trailing: Image.asset(
-                'assets/images/panahKanan.png',
-                scale: 2,
-              ),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            const Divider(
-              indent: 20,
-              endIndent: 20,
-              thickness: 2,
-            ),
-            ListTile(
-              title: const Text('Help Center'),
-              leading: const Icon(Icons.help_outline),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            const SizedBox(
-              height: 99,
-            ),
-            ListTile(
-              title: const Text('Settings'),
-              leading: const Icon(Icons.settings),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              title: const Text('Log Out'),
-              leading: const Icon(Icons.logout),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => splashScreen()),
-                );
-              },
+                  ),
+                ),
+              ],
             ),
           ],
         ),

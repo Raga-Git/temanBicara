@@ -4,7 +4,7 @@ import 'package:teman_bicara/screen/chatBotScreen01.dart';
 class loginScreen extends StatelessWidget {
   final void Function()? onTap;
   const loginScreen({super.key, required this.onTap});
-  void login() {}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,34 +65,48 @@ class loginScreen extends StatelessWidget {
               Container(
                 width: 363,
                 height: 55,
-                decoration: const ShapeDecoration(
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    side: BorderSide(width: 1, color: Color(0x66A4A4A4)),
-                    borderRadius: BorderRadius.all(Radius.circular(50.00)),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    labelText: "Nama pengguna atau email",
+                    labelStyle: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black54,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        width: 1,
+                        color: Color(0x66A4A4A4),
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        width: 2,
+                        color: Color(0xFF7D944D),
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        width: 1,
+                        color: Color(0x66A4A4A4),
+                      ),
+                    ),
                   ),
-                  shadows: [
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(50.00)),
+                  boxShadow: [
                     BoxShadow(
                       color: Color(0x3F000000),
                       blurRadius: 4,
                       offset: Offset(0, 1),
                       spreadRadius: 0,
-                    )
-                  ],
-                ),
-                padding: const EdgeInsets.symmetric(
-                  vertical: 16,
-                ),
-                child: const Padding(
-                  padding: EdgeInsets.only(left: 20),
-                  child: Text(
-                    "Nama pengguna atau email",
-                    style: TextStyle(
-                      color: Colors.black54,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 14,
                     ),
-                  ),
+                  ],
                 ),
               ),
               const SizedBox(
@@ -101,37 +115,49 @@ class loginScreen extends StatelessWidget {
               Container(
                 width: 363,
                 height: 55,
-                decoration: const ShapeDecoration(
-                  color: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    side: BorderSide(width: 1, color: Color(0x66A4A4A4)),
-                    borderRadius: BorderRadius.all(Radius.circular(50.00)),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    labelText: "Kata Sandi",
+                    labelStyle: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black54,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        width: 1,
+                        color: Color(0x66A4A4A4),
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        width: 2,
+                        color: Color(0xFF7D944D),
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        width: 1,
+                        color: Color(0x66A4A4A4),
+                      ),
+                    ),
+                    suffixIcon: Image.asset('assets/images/mata.png'),
                   ),
-                  shadows: [
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(50.00)),
+                  boxShadow: [
                     BoxShadow(
                       color: Color(0x3F000000),
                       blurRadius: 4,
                       offset: Offset(0, 1),
                       spreadRadius: 0,
-                    )
+                    ),
                   ],
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        "Kata sandi",
-                        style: TextStyle(
-                          color: Colors.black54,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 14,
-                        ),
-                      ),
-                      Image.asset('assets/images/mata.png'),
-                    ],
-                  ),
                 ),
               ),
               SizedBox(
@@ -198,7 +224,7 @@ class loginScreen extends StatelessWidget {
                     ),
                     decoration: ShapeDecoration(
                       color: Colors.white,
-                      shape: OvalBorder(),
+                      shape: CircleBorder(),
                       shadows: [
                         BoxShadow(
                           color: Color(0x3F000000),
@@ -221,7 +247,7 @@ class loginScreen extends StatelessWidget {
                     ),
                     decoration: ShapeDecoration(
                       color: Colors.white,
-                      shape: OvalBorder(),
+                      shape: CircleBorder(),
                       shadows: [
                         BoxShadow(
                           color: Color(0x3F000000),
@@ -244,7 +270,7 @@ class loginScreen extends StatelessWidget {
                     ),
                     decoration: ShapeDecoration(
                       color: Colors.white,
-                      shape: OvalBorder(),
+                      shape: CircleBorder(),
                       shadows: [
                         BoxShadow(
                           color: Color(0x3F000000),
@@ -269,13 +295,14 @@ class loginScreen extends StatelessWidget {
                         color: Colors.black54, fontWeight: FontWeight.bold),
                   ),
                   GestureDetector(
-                      onTap: onTap,
-                      child: Text(
-                        'Daftar',
-                        style: TextStyle(
-                            color: Colors.lightBlueAccent,
-                            fontWeight: FontWeight.bold),
-                      )),
+                    onTap: onTap,
+                    child: Text(
+                      'Daftar',
+                      style: TextStyle(
+                          color: Colors.lightBlueAccent,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
                 ],
               )
             ],

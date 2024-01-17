@@ -28,7 +28,6 @@ class Unggahartikel extends StatelessWidget {
                           children: [
                             Icon(
                               Icons.arrow_back_rounded,
-                              color: Colors.grey,
                             ),
                             Text(
                               "Unggah Artikel",
@@ -154,7 +153,7 @@ class Unggahartikel extends StatelessWidget {
                           decoration: InputDecoration(
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(50)),
-                            hintText: '   Yuk Ngobrol',
+                            hintText: '   Ketik apa yang kamu pikirkan...',
                           ),
                           obscureText: false,
                         ),
