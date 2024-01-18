@@ -115,18 +115,6 @@ class loginScreen extends StatelessWidget {
               Container(
                 width: 363,
                 height: 55,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(50.00)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0x3F000000),
-                      blurRadius: 4,
-                      offset: Offset(0, 1),
-                      spreadRadius: 0,
-                    ),
-                  ],
-                ),
                 child: TextFormField(
                   obscureText: true,
                   decoration: InputDecoration(
@@ -159,6 +147,18 @@ class loginScreen extends StatelessWidget {
                     ),
                     suffixIcon: Image.asset('assets/images/mata.png'),
                   ),
+                ),
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(50.00)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color(0x3F000000),
+                      blurRadius: 4,
+                      offset: Offset(0, 1),
+                      spreadRadius: 0,
+                    ),
+                  ],
                 ),
               ),
               const SizedBox(

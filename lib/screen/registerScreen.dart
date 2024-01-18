@@ -116,6 +116,7 @@ class registerScreen extends StatelessWidget {
                 width: 363,
                 height: 55,
                 child: TextFormField(
+                  obscureText: true,
                   decoration: InputDecoration(
                     labelText: "Kata Sandi",
                     labelStyle: TextStyle(
@@ -167,6 +168,7 @@ class registerScreen extends StatelessWidget {
                 width: 363,
                 height: 55,
                 child: TextFormField(
+                  obscureText: true,
                   decoration: InputDecoration(
                     labelText: "Konfirmasi Kata Sandi",
                     labelStyle: TextStyle(

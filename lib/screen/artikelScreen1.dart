@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:teman_bicara/screen/chatBotScreen01.dart';
+import 'package:teman_bicara/screen/history.dart';
 import 'package:teman_bicara/screen/splashScreen.dart';
 import 'package:teman_bicara/screen/trackingPage01.dart';
 import 'package:teman_bicara/screen/unggahPost.dart';
@@ -231,7 +232,6 @@ class artikelScreen1 extends StatelessWidget {
                           color: Color(0xFF7D944D),
                         ),
                         onTap: () {
-                          Navigator.pop(context);
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -253,7 +253,11 @@ class artikelScreen1 extends StatelessWidget {
                           color: Color(0xFF7D944D),
                         ),
                         onTap: () {
-                          Navigator.pop(context);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HistoryList()),
+                          );
                         },
                         trailing: const Icon(
                           Icons.chevron_right,
@@ -280,7 +284,7 @@ class artikelScreen1 extends StatelessWidget {
                           Navigator.pop(context);
                         },
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 99,
                       ),
                       ListTile(
@@ -302,7 +306,7 @@ class artikelScreen1 extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => splashScreen()),
+                                builder: (context) => const splashScreen()),
                           );
                         },
                       ),
@@ -359,7 +363,7 @@ class artikelScreen1 extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -540,7 +544,7 @@ class artikelScreen1 extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -615,9 +619,9 @@ class artikelScreen1 extends StatelessWidget {
                       MaterialPageRoute(
                           builder: ((context) => Unggahartikel())));
                 },
-                child: Icon(Icons.add),
-                backgroundColor: Color(0xFF7D944D),
-                shape: CircleBorder(),
+                backgroundColor: const Color(0xFF7D944D),
+                shape: const CircleBorder(),
+                child: const Icon(Icons.add),
               ),
             ),
           ],

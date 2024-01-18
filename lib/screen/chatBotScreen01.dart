@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:teman_bicara/screen/ChatBotScreen02.dart';
 import 'package:teman_bicara/screen/artikelScreen1.dart';
 import 'package:teman_bicara/screen/history.dart';
 import 'package:teman_bicara/screen/splashScreen.dart';
@@ -256,7 +257,7 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => HistoryList()),
+                                builder: (context) => const HistoryList()),
                           );
                         },
                         trailing: const Icon(
@@ -284,7 +285,7 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
                           Navigator.pop(context);
                         },
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 99,
                       ),
                       ListTile(
@@ -306,7 +307,7 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => splashScreen()),
+                                builder: (context) => const splashScreen()),
                           );
                         },
                       ),
@@ -393,14 +394,22 @@ class _ChatBotScreenState extends State<ChatBotScreen01> {
       child: Row(
         children: [
           Expanded(
-            child: TextField(
-              controller: TextEditingController(),
-              decoration: InputDecoration(
-                border:
-                    OutlineInputBorder(borderRadius: BorderRadius.circular(50)),
-                hintText: '   Yuk Ngobrol',
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ChatBotScreen02()),
+                );
+              },
+              child: TextField(
+                controller: TextEditingController(),
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50)),
+                  hintText: '   Yuk Ngobrol',
+                ),
+                obscureText: false,
               ),
-              obscureText: false,
             ),
           ),
           const SizedBox(
